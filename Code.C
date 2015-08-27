@@ -273,7 +273,7 @@ public class Script
 		
 		//MessageBox.Show(msg);
 
-		burnTestGrid.DisplayLayout.Bands[0].Columns["UD01.Company"].Hidden = true;
+				burnTestGrid.DisplayLayout.Bands[0].Columns["UD01.Company"].Hidden = true;
 		burnTestGrid.DisplayLayout.Bands[0].Columns["UD01.Key1"].Hidden = false;
 		burnTestGrid.DisplayLayout.Bands[0].Columns["UD01.Key2"].Hidden = true;
 		burnTestGrid.DisplayLayout.Bands[0].Columns["UD01.Key3"].Hidden = true;
@@ -319,8 +319,8 @@ public class Script
 				String partNum = r.Cells["UD01.Character01"].Value.ToString();
 				String BTNum = r.Cells["UD01.Key1"].Value.ToString();
 				String LotNum = r.Cells["UD01.Character02"].Value.ToString();
-				String SupPN = r.Cells["UD01.Character03"].Value.ToString();
-
+				String SupPN = r.Cells["UD01.Character03"].Value.ToString();				
+				
 				String JobNum = txtJobNum.Text;
 				bool dup=false;
 				foreach(UD02DataSet.UD02Row r2 in oTrans_adapter.UD02Data.UD02)
@@ -334,10 +334,10 @@ public class Script
 					oTrans.GetNew(JobNum,partNum,BTNum,LotNum,"");
 					foreach(DataRowView r1 in edvUD02.dataView)
 					{
-						if((string)r1["RowMod"] == "A")r1["Character03"] = SupPN;
+						if((string)r1["RowMod"] == "A")r1["Character04"] = SupPN;
 					}
 				}
-		MessageBox.Show("POP: " + SupPN);
+				MessageBox.Show("POP: " + SupPN);
 			}
 			grdBurnTestData.DeleteSelectedRows(false);
 			//oTrans.GetNew(1,
@@ -520,7 +520,7 @@ public class Script
 	
 				foreach(DataRow dr in dt.Rows)
 				{
-					msg = String.Format("Lot Data: {0}, {1}, {2}, {3}, {4}, {5}, {6}", dr["UD02.Company"], dr["UD02.Key1"], dr["UD02.Key2"], dr["UD02.Key3"], dr["UD02.Key4"], dr["UD02.Key5"], dr["UD02.Character03"]);
+					msg = String.Format("Lot Data: {0}, {1}, {2}, {3}, {4}, {5}", dr["UD02.Company"], dr["UD02.Key1"], dr["UD02.Key2"], dr["UD02.Key3"], dr["UD02.Key4"], dr["UD02.Key5"]);
 					oTrans.PushStatusText(msg, true);
 
 					bool dup=false;
@@ -529,9 +529,7 @@ public class Script
 						if (r2.Key2.Equals(dr["UD02.Key2"].ToString()) && 
 								r2.Key3.Equals(dr["UD02.Key3"].ToString()) && 
 								r2.Key4.Equals(dr["UD02.Key4"].ToString()) && 
-								r2.Key5.Equals(dr["UD02.Key5"].ToString()) &&
-								r2.Character03.Equals(dr["UD02.Character03"].ToString())
-
+								r2.Key5.Equals(dr["UD02.Key5"].ToString())
 						   ){
 
 							oTrans.PushStatusText(msg, true);
@@ -541,7 +539,7 @@ public class Script
 					}
 					if(!dup)						{
 						oTrans.GetNew(txtJobNum.Text,dr["UD02.Key2"].ToString(),dr["UD02.Key3"].ToString(),dr["UD02.Key4"].ToString(),"");
-						//edvUD02.dataView[edvUD02.Row]["Character03"]="Copied By: "+((Session)oTrans.Session).UserID+" From Job: "+txtCopyFromJob.Text+" In Company: "+dr["UD02.Company"].ToString();
+						edvUD02.dataView[edvUD02.Row]["Character03"]="Copied By: "+((Session)oTrans.Session).UserID+" From Job: "+txtCopyFromJob.Text+" In Company: "+dr["UD02.Company"].ToString();
 						edvUD02.Notify(new EpiNotifyArgs(oTrans,edvUD02.Row,edvUD02.Column));
 					}
 				}
@@ -576,8 +574,6 @@ public class Script
 				String partNum = dt.Rows[0]["UD01.Character01"].ToString();
 				String BTNum = dt.Rows[0]["UD01.Key1"].ToString();
 				String LotNum = dt.Rows[0]["UD01.Character02"].ToString();
-				String SupPN = dt.Rows[0]["UD01.Character03"].ToString();
-
 				String JobNum = txtJobNum.Text;
 	
 				bool dup=false;

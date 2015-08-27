@@ -1,7 +1,7 @@
 <?xml version="1.0" standalone="yes"?>
 <CustomizationDS xmlns="http://tempuri.org/XMLSchema.xsd">
   <xs:schema id="CustomizationDS" targetNamespace="http://tempuri.org/XMLSchema.xsd" xmlns:mstns="http://tempuri.org/XMLSchema.xsd" xmlns="http://tempuri.org/XMLSchema.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
-    <xs:element name="CustomizationDS" msdata:IsDataSet="true" msdata:Locale="" msprop:Key2="App.UD02Entry.UD02Form" msprop:CGCCode="" msprop:CommentText="" msprop:Key3="" msprop:Key1="BT2JT" msprop:Description="BT2JT" msprop:TypeCode="Customization" msprop:ProductID="EP" msprop:Company="" msprop:BuildVersion="9.05.702A">
+    <xs:element name="CustomizationDS" msdata:IsDataSet="true" msdata:Locale="" msprop:Key2="App.UD02Entry.UD02Form" msprop:CGCCode="" msprop:CommentText="Updated for Multi COmpany use HD# 9379&#xA;[manager: 4/4/2012 10:57:36 AM]&#xA;&#xA;&#xA;[spare: 3/7/2013 10:17:15 AM]" msprop:Key3="" msprop:Key1="BTJT_V3" msprop:Description="BTJT_V3" msprop:TypeCode="Customization" msprop:ProductID="EP" msprop:Company="CIC68322" msprop:BuildVersion="9.05.702A">
       <xs:complexType>
         <xs:choice minOccurs="0" maxOccurs="unbounded">
           <xs:element name="Controls">
@@ -800,7 +800,7 @@ public class Script
 		
 		//MessageBox.Show(msg);
 
-				burnTestGrid.DisplayLayout.Bands[0].Columns["UD01.Company"].Hidden = true;
+		burnTestGrid.DisplayLayout.Bands[0].Columns["UD01.Company"].Hidden = true;
 		burnTestGrid.DisplayLayout.Bands[0].Columns["UD01.Key1"].Hidden = false;
 		burnTestGrid.DisplayLayout.Bands[0].Columns["UD01.Key2"].Hidden = true;
 		burnTestGrid.DisplayLayout.Bands[0].Columns["UD01.Key3"].Hidden = true;
@@ -808,7 +808,6 @@ public class Script
 		burnTestGrid.DisplayLayout.Bands[0].Columns["UD01.Key5"].Hidden = true;
 		burnTestGrid.DisplayLayout.Bands[0].Columns["UD01.Character01"].Hidden = true;
 		burnTestGrid.DisplayLayout.Bands[0].Columns["UD01.Character02"].Hidden = false;
-		burnTestGrid.DisplayLayout.Bands[0].Columns["UD01.Character03"].Hidden = false;
 		burnTestGrid.DisplayLayout.Bands[0].Columns["UD01.Date01"].Hidden = false;
 		burnTestGrid.DisplayLayout.Bands[0].Columns["UD01.ShortChar02"].Hidden = false;
 
@@ -820,7 +819,6 @@ public class Script
 		burnTestGrid.DisplayLayout.Bands[0].Columns["UD01.Key5"].Header.Caption = "Key5";
 		burnTestGrid.DisplayLayout.Bands[0].Columns["UD01.Character01"].Header.Caption = "Mtl P/N";
 		burnTestGrid.DisplayLayout.Bands[0].Columns["UD01.Character02"].Header.Caption = "Lot Num";
-		burnTestGrid.DisplayLayout.Bands[0].Columns["UD01.Character03"].Header.Caption = "Sup P/N";
 		burnTestGrid.DisplayLayout.Bands[0].Columns["UD01.Date01"].Header.Caption = "Date";
 		burnTestGrid.DisplayLayout.Bands[0].Columns["UD01.ShortChar02"].Header.Caption = "Plant";
 
@@ -846,8 +844,6 @@ public class Script
 				String partNum = r.Cells["UD01.Character01"].Value.ToString();
 				String BTNum = r.Cells["UD01.Key1"].Value.ToString();
 				String LotNum = r.Cells["UD01.Character02"].Value.ToString();
-				String SupPN = r.Cells["UD01.Character03"].Value.ToString();				
-				
 				String JobNum = txtJobNum.Text;
 				bool dup=false;
 				foreach(UD02DataSet.UD02Row r2 in oTrans_adapter.UD02Data.UD02)
@@ -857,14 +853,9 @@ public class Script
 							break;
 						}
 				}
-				if(!dup){
+				if(!dup)
 					oTrans.GetNew(JobNum,partNum,BTNum,LotNum,"");
-					foreach(DataRowView r1 in edvUD02.dataView)
-					{
-						if((string)r1["RowMod"] == "A")r1["Character04"] = SupPN;
-					}
-				}
-				MessageBox.Show("POP: " + SupPN);
+				
 			}
 			grdBurnTestData.DeleteSelectedRows(false);
 			//oTrans.GetNew(1,
@@ -1952,7 +1943,7 @@ public class Script
     <ControlName>txtJobNum</ControlName>
     <Key>983351c5-08f4-469d-994a-4c31ef952d69</Key>
     <PropertyName>ChildIndex</PropertyName>
-    <PropertyValue>2</PropertyValue>
+    <PropertyValue>9</PropertyValue>
     <Company />
     <Plant />
     <DcdUserID />
@@ -2156,7 +2147,7 @@ public class Script
     <ControlName>txtCopyFromJob</ControlName>
     <Key>1215c3cb-68c4-48a3-9c85-2a8434d40196</Key>
     <PropertyName>ChildIndex</PropertyName>
-    <PropertyValue>7</PropertyValue>
+    <PropertyValue>6</PropertyValue>
     <Company />
     <Plant />
     <DcdUserID />
@@ -2252,7 +2243,7 @@ public class Script
     <ControlName>txtBTSearch</ControlName>
     <Key>afb135ef-4d25-4633-b2a3-6d28028f6947</Key>
     <PropertyName>ChildIndex</PropertyName>
-    <PropertyValue>3</PropertyValue>
+    <PropertyValue>1</PropertyValue>
     <Company />
     <Plant />
     <DcdUserID />
@@ -2348,7 +2339,7 @@ public class Script
     <ControlName>btnAddBt</ControlName>
     <Key>42e4c4c5-c2e7-40e8-a553-70f9999c845a</Key>
     <PropertyName>ChildIndex</PropertyName>
-    <PropertyValue>2</PropertyValue>
+    <PropertyValue>0</PropertyValue>
     <Company />
     <Plant />
     <DcdUserID />
@@ -2444,7 +2435,7 @@ public class Script
     <ControlName>btnAdd</ControlName>
     <Key>fe2b0d72-5db4-4c49-8fa5-e33df9ff414d</Key>
     <PropertyName>ChildIndex</PropertyName>
-    <PropertyValue>0</PropertyValue>
+    <PropertyValue>4</PropertyValue>
     <Company />
     <Plant />
     <DcdUserID />
@@ -2528,7 +2519,7 @@ public class Script
     <ControlName>btnRemove</ControlName>
     <Key>33a827f6-ef4a-4208-a974-2f5acf21b082</Key>
     <PropertyName>ChildIndex</PropertyName>
-    <PropertyValue>5</PropertyValue>
+    <PropertyValue>3</PropertyValue>
     <Company />
     <Plant />
     <DcdUserID />
@@ -2648,7 +2639,1130 @@ public class Script
     <ControlName>grdLotTrackData</ControlName>
     <Key>f851d5fd-7707-4c43-abbb-0a99028d857d</Key>
     <PropertyName>LayoutXML</PropertyName>
-    <PropertyValue>&lt;DisplayLayout&gt;&lt;xs:schema id="DisplayLayout" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"&gt;&lt;xs:element name="DisplayLayout" msdata:IsDataSet="true" msdata:UseCurrentLocale="true"&gt;&lt;xs:complexType&gt;&lt;xs:choice minOccurs="0" maxOccurs="unbounded"&gt;&lt;xs:element name="DisplayLayoutTable"&gt;&lt;xs:complexType&gt;&lt;xs:sequence&gt;&lt;xs:element name="ColumnKey" type="xs:string" minOccurs="0" /&gt;&lt;xs:element name="PropertyName" type="xs:string" minOccurs="0" /&gt;&lt;xs:element name="PropertyValue" type="xs:string" minOccurs="0" /&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;/xs:element&gt;&lt;/xs:choice&gt;&lt;/xs:complexType&gt;&lt;/xs:element&gt;&lt;/xs:schema&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;f851d5fd-7707-4c43-abbb-0a99028d857d&lt;/ColumnKey&gt;&lt;PropertyName&gt;ShowSummaries&lt;/PropertyName&gt;&lt;PropertyValue&gt;False&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Company&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Company&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Key1&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;124&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Key1&lt;/ColumnKey&gt;&lt;PropertyName&gt;Caption&lt;/PropertyName&gt;&lt;PropertyValue&gt;PREmpMas.EmpID&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Key1&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Key2&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Key2&lt;/ColumnKey&gt;&lt;PropertyName&gt;Caption&lt;/PropertyName&gt;&lt;PropertyValue&gt;P/N&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Key3&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Key3&lt;/ColumnKey&gt;&lt;PropertyName&gt;Caption&lt;/PropertyName&gt;&lt;PropertyValue&gt;BT#&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Key4&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Key5&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;164&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Key5&lt;/ColumnKey&gt;&lt;PropertyName&gt;Caption&lt;/PropertyName&gt;&lt;PropertyValue&gt;Guid.NewGuid().ToString()&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Key5&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character01&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character01&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character02&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character02&lt;/ColumnKey&gt;&lt;PropertyName&gt;Caption&lt;/PropertyName&gt;&lt;PropertyValue&gt;PayType&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character02&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character03&lt;/ColumnKey&gt;&lt;PropertyName&gt;Caption&lt;/PropertyName&gt;&lt;PropertyValue&gt;SupNum&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character03&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;False&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character04&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character04&lt;/ColumnKey&gt;&lt;PropertyName&gt;Caption&lt;/PropertyName&gt;&lt;PropertyValue&gt;ApprovedBy&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character04&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character05&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;135&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character05&lt;/ColumnKey&gt;&lt;PropertyName&gt;Caption&lt;/PropertyName&gt;&lt;PropertyValue&gt;SupervisorComments&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character05&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character06&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character06&lt;/ColumnKey&gt;&lt;PropertyName&gt;Caption&lt;/PropertyName&gt;&lt;PropertyValue&gt;ExchangeID&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character06&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character07&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character07&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character08&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character08&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character09&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character09&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character10&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character10&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number01&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;117&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number01&lt;/ColumnKey&gt;&lt;PropertyName&gt;Caption&lt;/PropertyName&gt;&lt;PropertyValue&gt;TiimeOffStartTime&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number01&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number02&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;110&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number02&lt;/ColumnKey&gt;&lt;PropertyName&gt;Caption&lt;/PropertyName&gt;&lt;PropertyValue&gt;TimeOffEndTime&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number02&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number03&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;79&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number03&lt;/ColumnKey&gt;&lt;PropertyName&gt;Caption&lt;/PropertyName&gt;&lt;PropertyValue&gt;TotalHours&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number03&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number04&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;79&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number04&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number05&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;79&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number05&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number06&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;79&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number06&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number07&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;79&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number07&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number08&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;79&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number08&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number09&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;79&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number09&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number10&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;79&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number10&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number11&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;79&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number11&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number12&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;79&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number12&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number13&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;79&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number13&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number14&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;79&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number14&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number15&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;79&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number15&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number16&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;79&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number16&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number17&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;79&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number17&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number18&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;79&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number18&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number19&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;79&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number19&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number20&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;79&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number20&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date01&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;113&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date01&lt;/ColumnKey&gt;&lt;PropertyName&gt;Caption&lt;/PropertyName&gt;&lt;PropertyValue&gt;TimeOffStartDate&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date01&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date02&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;109&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date02&lt;/ColumnKey&gt;&lt;PropertyName&gt;Caption&lt;/PropertyName&gt;&lt;PropertyValue&gt;TimeOffEndDate&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date02&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date03&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;89&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date03&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date04&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;89&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date04&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date05&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;89&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date05&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date06&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;89&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date06&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date07&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;89&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date07&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date08&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;89&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date08&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date09&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;89&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date09&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date10&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;89&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date10&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date11&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;89&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date11&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date12&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;89&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date12&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date13&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;89&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date13&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date14&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;89&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date14&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date15&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;89&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date15&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date16&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;89&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date16&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date17&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;89&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date17&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date18&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;89&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date18&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date19&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;89&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date19&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date20&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;89&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date20&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox01&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;85&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox01&lt;/ColumnKey&gt;&lt;PropertyName&gt;Caption&lt;/PropertyName&gt;&lt;PropertyValue&gt;APPROVED&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox01&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox02&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;63&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox02&lt;/ColumnKey&gt;&lt;PropertyName&gt;Caption&lt;/PropertyName&gt;&lt;PropertyValue&gt;DENIED&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox02&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox03&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;73&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox03&lt;/ColumnKey&gt;&lt;PropertyName&gt;Caption&lt;/PropertyName&gt;&lt;PropertyValue&gt;PENDING&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox03&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox04&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;75&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox04&lt;/ColumnKey&gt;&lt;PropertyName&gt;Caption&lt;/PropertyName&gt;&lt;PropertyValue&gt;Processed&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox04&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox05&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;87&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox05&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox06&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;87&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox06&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox07&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;87&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox07&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox08&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;87&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox08&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox09&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;87&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox09&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox10&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;87&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox10&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox11&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;87&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox11&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox12&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;87&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox12&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox13&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;87&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox13&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox14&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;87&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox14&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox15&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;87&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox15&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox16&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;87&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox16&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox17&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;87&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox17&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox18&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;87&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox18&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox19&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;87&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox19&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox20&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;87&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox20&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar01&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar01&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar02&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar02&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar03&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar03&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar04&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar04&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar05&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar05&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar06&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar06&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar07&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar07&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar08&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar08&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar09&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar09&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar10&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar10&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar11&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar11&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar12&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar12&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar13&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar13&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar14&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar14&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar15&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar15&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar16&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar16&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar17&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar17&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar18&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar18&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar19&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar19&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar20&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar20&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;SysRowID&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;SysRevID&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;71&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;BitFlag&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;58&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;BitFlag&lt;/ColumnKey&gt;&lt;PropertyName&gt;Caption&lt;/PropertyName&gt;&lt;PropertyValue&gt;Bit Flag&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;BitFlag&lt;/ColumnKey&gt;&lt;PropertyName&gt;CellActivation&lt;/PropertyName&gt;&lt;PropertyValue&gt;NoEdit&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;GlobalUD02&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;84&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;GlobalUD02&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;GlobalLock&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;78&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;GlobalLock&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;RowIdent&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;RowMod&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;DBRowIdent&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;86&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Key4&lt;/ColumnKey&gt;&lt;PropertyName&gt;Caption&lt;/PropertyName&gt;&lt;PropertyValue&gt;Lot Num&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character03&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;UD02ToUD02Attch&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;122&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;UD02ToUD02Attch&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;/DisplayLayout&gt;</PropertyValue>
+    <PropertyValue>&lt;DisplayLayout&gt;
+  &lt;xs:schema id="DisplayLayout" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"&gt;
+    &lt;xs:element name="DisplayLayout" msdata:IsDataSet="true" msdata:UseCurrentLocale="true"&gt;
+      &lt;xs:complexType&gt;
+        &lt;xs:choice minOccurs="0" maxOccurs="unbounded"&gt;
+          &lt;xs:element name="DisplayLayoutTable"&gt;
+            &lt;xs:complexType&gt;
+              &lt;xs:sequence&gt;
+                &lt;xs:element name="ColumnKey" type="xs:string" minOccurs="0" /&gt;
+                &lt;xs:element name="PropertyName" type="xs:string" minOccurs="0" /&gt;
+                &lt;xs:element name="PropertyValue" type="xs:string" minOccurs="0" /&gt;
+              &lt;/xs:sequence&gt;
+            &lt;/xs:complexType&gt;
+          &lt;/xs:element&gt;
+        &lt;/xs:choice&gt;
+      &lt;/xs:complexType&gt;
+    &lt;/xs:element&gt;
+  &lt;/xs:schema&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;f851d5fd-7707-4c43-abbb-0a99028d857d&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;ShowSummaries&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;False&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Company&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;98&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Company&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Key1&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;98&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Key1&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Caption&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;PREmpMas.EmpID&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Key1&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Key2&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;98&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Key2&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Caption&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;P/N&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Key3&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;98&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Key3&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Caption&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;BT#&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Key4&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;98&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Key5&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;164&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Key5&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Caption&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;Guid.NewGuid().ToString()&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Key5&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Character01&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;98&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Character01&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Character02&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;98&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Character02&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Caption&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;PayType&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Character02&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Character03&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Caption&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;RequestDetails&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Character03&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Character04&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;98&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Character04&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Caption&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;ApprovedBy&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Character04&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Character05&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;135&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Character05&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Caption&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;SupervisorComments&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Character05&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Character06&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;98&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Character06&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Caption&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;ExchangeID&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Character06&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Character07&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;98&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Character07&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Character08&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;98&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Character08&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Character09&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;98&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Character09&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Character10&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;98&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Character10&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Number01&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;117&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Number01&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Caption&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;TiimeOffStartTime&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Number01&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Number02&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;110&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Number02&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Caption&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;TimeOffEndTime&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Number02&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Number03&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;79&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Number03&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Caption&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;TotalHours&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Number03&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Number04&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;79&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Number04&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Number05&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;79&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Number05&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Number06&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;79&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Number06&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Number07&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;79&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Number07&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Number08&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;79&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Number08&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Number09&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;79&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Number09&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Number10&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;79&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Number10&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Number11&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;79&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Number11&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Number12&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;79&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Number12&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Number13&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;79&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Number13&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Number14&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;79&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Number14&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Number15&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;79&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Number15&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Number16&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;79&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Number16&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Number17&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;79&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Number17&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Number18&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;79&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Number18&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Number19&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;79&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Number19&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Number20&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;79&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Number20&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Date01&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;113&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Date01&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Caption&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;TimeOffStartDate&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Date01&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Date02&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;109&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Date02&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Caption&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;TimeOffEndDate&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Date02&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Date03&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;89&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Date03&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Date04&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;89&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Date04&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Date05&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;89&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Date05&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Date06&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;89&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Date06&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Date07&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;89&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Date07&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Date08&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;89&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Date08&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Date09&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;89&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Date09&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Date10&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;89&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Date10&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Date11&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;89&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Date11&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Date12&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;89&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Date12&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Date13&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;89&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Date13&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Date14&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;89&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Date14&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Date15&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;89&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Date15&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Date16&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;89&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Date16&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Date17&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;89&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Date17&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Date18&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;89&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Date18&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Date19&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;89&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Date19&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Date20&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;89&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Date20&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;CheckBox01&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;85&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;CheckBox01&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Caption&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;APPROVED&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;CheckBox01&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;CheckBox02&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;63&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;CheckBox02&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Caption&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;DENIED&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;CheckBox02&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;CheckBox03&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;73&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;CheckBox03&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Caption&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;PENDING&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;CheckBox03&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;CheckBox04&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;75&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;CheckBox04&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Caption&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;Processed&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;CheckBox04&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;CheckBox05&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;87&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;CheckBox05&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;CheckBox06&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;87&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;CheckBox06&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;CheckBox07&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;87&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;CheckBox07&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;CheckBox08&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;87&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;CheckBox08&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;CheckBox09&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;87&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;CheckBox09&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;CheckBox10&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;87&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;CheckBox10&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;CheckBox11&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;87&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;CheckBox11&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;CheckBox12&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;87&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;CheckBox12&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;CheckBox13&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;87&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;CheckBox13&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;CheckBox14&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;87&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;CheckBox14&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;CheckBox15&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;87&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;CheckBox15&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;CheckBox16&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;87&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;CheckBox16&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;CheckBox17&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;87&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;CheckBox17&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;CheckBox18&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;87&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;CheckBox18&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;CheckBox19&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;87&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;CheckBox19&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;CheckBox20&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;87&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;CheckBox20&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;ShortChar01&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;98&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;ShortChar01&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;ShortChar02&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;98&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;ShortChar02&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;ShortChar03&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;98&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;ShortChar03&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;ShortChar04&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;98&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;ShortChar04&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;ShortChar05&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;98&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;ShortChar05&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;ShortChar06&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;98&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;ShortChar06&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;ShortChar07&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;98&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;ShortChar07&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;ShortChar08&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;98&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;ShortChar08&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;ShortChar09&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;98&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;ShortChar09&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;ShortChar10&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;98&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;ShortChar10&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;ShortChar11&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;98&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;ShortChar11&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;ShortChar12&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;98&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;ShortChar12&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;ShortChar13&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;98&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;ShortChar13&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;ShortChar14&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;98&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;ShortChar14&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;ShortChar15&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;98&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;ShortChar15&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;ShortChar16&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;98&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;ShortChar16&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;ShortChar17&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;98&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;ShortChar17&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;ShortChar18&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;98&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;ShortChar18&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;ShortChar19&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;98&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;ShortChar19&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;ShortChar20&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;98&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;ShortChar20&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;SysRowID&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;98&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;SysRevID&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;71&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;BitFlag&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;58&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;BitFlag&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Caption&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;Bit Flag&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;BitFlag&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;CellActivation&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;NoEdit&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;GlobalUD02&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;84&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;GlobalUD02&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;GlobalLock&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;78&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;GlobalLock&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;True&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;RowIdent&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;98&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;RowMod&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;98&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;DBRowIdent&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;86&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Key4&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Caption&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;Lot Num&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+  &lt;DisplayLayoutTable&gt;
+    &lt;ColumnKey&gt;Character03&lt;/ColumnKey&gt;
+    &lt;PropertyName&gt;Width&lt;/PropertyName&gt;
+    &lt;PropertyValue&gt;100&lt;/PropertyValue&gt;
+  &lt;/DisplayLayoutTable&gt;
+&lt;/DisplayLayout&gt;</PropertyValue>
     <Company />
     <Plant />
     <DcdUserID />
@@ -2660,7 +3774,7 @@ public class Script
     <ControlName>btnCopy</ControlName>
     <Key>db0651d6-557d-441c-8ae5-cde052e8a0f6</Key>
     <PropertyName>ChildIndex</PropertyName>
-    <PropertyValue>7</PropertyValue>
+    <PropertyValue>6</PropertyValue>
     <Company />
     <Plant />
     <DcdUserID />
@@ -2912,7 +4026,7 @@ public class Script
     <ControlName>btnAdd</ControlName>
     <Key>fe2b0d72-5db4-4c49-8fa5-e33df9ff414d</Key>
     <PropertyName>AnchorTop</PropertyName>
-    <PropertyValue>232</PropertyValue>
+    <PropertyValue>233</PropertyValue>
     <Company />
     <Plant />
     <DcdUserID />
@@ -2924,7 +4038,7 @@ public class Script
     <ControlName>btnAdd</ControlName>
     <Key>fe2b0d72-5db4-4c49-8fa5-e33df9ff414d</Key>
     <PropertyName>AnchorLeft</PropertyName>
-    <PropertyValue>748</PropertyValue>
+    <PropertyValue>749</PropertyValue>
     <Company />
     <Plant />
     <DcdUserID />
@@ -3056,7 +4170,7 @@ public class Script
     <ControlName>lblGlobalJobNum</ControlName>
     <Key>7ec845df-960b-42cc-ad9c-68fa382fac56</Key>
     <PropertyName>ChildIndex</PropertyName>
-    <PropertyValue>8</PropertyValue>
+    <PropertyValue>7</PropertyValue>
     <Company />
     <Plant />
     <DcdUserID />
@@ -3260,7 +4374,7 @@ public class Script
     <ControlName>lblGlobalBTNum</ControlName>
     <Key>f5e9ae0f-694e-4e96-911b-83782f0febe2</Key>
     <PropertyName>ChildIndex</PropertyName>
-    <PropertyValue>4</PropertyValue>
+    <PropertyValue>2</PropertyValue>
     <Company />
     <Plant />
     <DcdUserID />
@@ -3453,894 +4567,6 @@ public class Script
     <Key>afb135ef-4d25-4633-b2a3-6d28028f6947</Key>
     <PropertyName>EpiLabel</PropertyName>
     <PropertyValue>lblGlobalBTNum</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>detailPanel1</FormsID>
-    <ControlName>txtJobNum</ControlName>
-    <Key>983351c5-08f4-469d-994a-4c31ef952d69</Key>
-    <PropertyName>AnchorTop</PropertyName>
-    <PropertyValue>40</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>detailPanel1</FormsID>
-    <ControlName>txtJobNum</ControlName>
-    <Key>983351c5-08f4-469d-994a-4c31ef952d69</Key>
-    <PropertyName>AnchorLeft</PropertyName>
-    <PropertyValue>84</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>detailPanel1</FormsID>
-    <ControlName>txtJobNum</ControlName>
-    <Key>983351c5-08f4-469d-994a-4c31ef952d69</Key>
-    <PropertyName>AnchorWidth</PropertyName>
-    <PropertyValue>101</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>detailPanel1</FormsID>
-    <ControlName>txtJobNum</ControlName>
-    <Key>983351c5-08f4-469d-994a-4c31ef952d69</Key>
-    <PropertyName>AnchorHeight</PropertyName>
-    <PropertyValue>20</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions.ConfirmOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>ConfirmUpdateOnRowChange</PropertyName>
-    <PropertyValue>False</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions.ConfirmOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>ConfirmUpdateOnSaveButton</PropertyName>
-    <PropertyValue>False</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions.ConfirmOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>ConfirmUpdateOnPrimaryKey</PropertyName>
-    <PropertyValue>True</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions.ConfirmOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>ConfirmUpdateOnFormClose</PropertyName>
-    <PropertyValue>True</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions.ConfirmOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>ConfirmUpdateOnNewButton</PropertyName>
-    <PropertyValue>False</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions.ConfirmOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>ConfirmUpdateOnSaveAndNew</PropertyName>
-    <PropertyValue>False</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions.ConfirmOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>ConfirmUpdateOnInvokeSearch</PropertyName>
-    <PropertyValue>True</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions.ConfirmOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>ConfirmAddNewOnNewButton</PropertyName>
-    <PropertyValue>False</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions.ConfirmOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>ConfirmAddNewOnNewGridRow</PropertyName>
-    <PropertyValue>False</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions.ConfirmOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>ConfirmAddNewOnPrimaryKey</PropertyName>
-    <PropertyValue>True</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions.ConfirmOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>ConfirmDeleteOnDeleteButton</PropertyName>
-    <PropertyValue>False</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions.ConfirmOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>ConfirmDeleteOnDeleteNewRow</PropertyName>
-    <PropertyValue>False</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions.ConfirmOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>ConfirmDeleteAttachment</PropertyName>
-    <PropertyValue>False</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions.ConfirmOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>ConfirmUndoOnUndoButton</PropertyName>
-    <PropertyValue>False</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions.ConfirmOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>ConfirmUndoOnUndoNewRow</PropertyName>
-    <PropertyValue>False</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions.ConfirmOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>ConfirmUndoOnClearButton</PropertyName>
-    <PropertyValue>True</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions.ConfirmOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>ConfirmUndoOnRefreshButton</PropertyName>
-    <PropertyValue>False</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>TreeOptions</PropertyName>
-    <PropertyValue>System.Collections.Hashtable</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>DeleteToolPosition</PropertyName>
-    <PropertyValue>Default</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>StatusBarPanels</PropertyName>
-    <PropertyValue>System.Collections.Queue</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>BorderPanelStyle</PropertyName>
-    <PropertyValue>Default</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>BorderStyle</PropertyName>
-    <PropertyValue>Default</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>DateFormat</PropertyName>
-    <PropertyValue>d</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>TimeFormat</PropertyName>
-    <PropertyValue>t</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>DoubleClickOpensMaint</PropertyName>
-    <PropertyValue>True</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>EnterpriseSearchHotKey</PropertyName>
-    <PropertyValue>CtrlShiftS</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>ZoneHotKey</PropertyName>
-    <PropertyValue>CtrlShiftI</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>SearchHotKey</PropertyName>
-    <PropertyValue>CtrlS</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>MaintHotKey</PropertyName>
-    <PropertyValue>CtrlM</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>CarriageReturnAsTab</PropertyName>
-    <PropertyValue>False</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>EscapeAsClose</PropertyName>
-    <PropertyValue>False</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>ClearHotKey</PropertyName>
-    <PropertyValue>None</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>DeleteHotKey</PropertyName>
-    <PropertyValue>None</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>ExitHotKey</PropertyName>
-    <PropertyValue>None</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>NewHotKey</PropertyName>
-    <PropertyValue>None</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>RefreshHotKey</PropertyName>
-    <PropertyValue>None</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>SaveHotKey</PropertyName>
-    <PropertyValue>None</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>UndoHotKey</PropertyName>
-    <PropertyValue>None</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>OverrideGlobalHotKeys</PropertyName>
-    <PropertyValue>False</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>FormShortcuts</PropertyName>
-    <PropertyValue>System.Collections.Hashtable</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>SnapToGrid</PropertyName>
-    <PropertyValue>True</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>DesignerGridHeight</PropertyName>
-    <PropertyValue>4</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>DesignerGridWidth</PropertyName>
-    <PropertyValue>4</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>DefaultCustomizationLanguage</PropertyName>
-    <PropertyValue>None</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>TopMost</PropertyName>
-    <PropertyValue>True</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>SuppressSaveCommentDialog</PropertyName>
-    <PropertyValue>True</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>UseTabs</PropertyName>
-    <PropertyValue>True</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>UseTabStops</PropertyName>
-    <PropertyValue>False</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>TabSize</PropertyName>
-    <PropertyValue>4</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>AutoIndentMode</PropertyName>
-    <PropertyValue>None</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>SearchIndicator</PropertyName>
-    <PropertyValue>True</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>MaintIndicator</PropertyName>
-    <PropertyValue>True</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>SearchColor</PropertyName>
-    <PropertyValue>LightSteelBlue</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>MaintColor</PropertyName>
-    <PropertyValue>DarkKhaki</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>SaveTools</PropertyName>
-    <PropertyValue>True</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>SaveDocks</PropertyName>
-    <PropertyValue>True</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>SaveGrids</PropertyName>
-    <PropertyValue>True</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>MemoryCache</PropertyName>
-    <PropertyValue>False</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>RibbonView</PropertyName>
-    <PropertyValue>Default</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>FormStartOption</PropertyName>
-    <PropertyValue>0</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>NamedSearch</PropertyName>
-    <PropertyValue />
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>ShowToolTips</PropertyName>
-    <PropertyValue>False</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>ShowPopupHelp</PropertyName>
-    <PropertyValue>False</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>ShowOnLineHelp</PropertyName>
-    <PropertyValue>False</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>HelpKey</PropertyName>
-    <PropertyValue>F1</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>HelpModifierKey</PropertyName>
-    <PropertyValue>None</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>ZoneIndicatorSuppressed</PropertyName>
-    <PropertyValue>False</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>ZoneIndicatorColor</PropertyName>
-    <PropertyValue>LightSteelBlue</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>RequiredIndicator</PropertyName>
-    <PropertyValue>False</PropertyValue>
-    <Company />
-    <Plant />
-    <DcdUserID />
-    <GroupID />
-    <PropertiesID />
-  </Properties>
-  <Properties>
-    <FormsID>UD02Form</FormsID>
-    <ControlName>FormOptions</ControlName>
-    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
-    <PropertyName>RequiredIndicatorColor</PropertyName>
-    <PropertyValue>Salmon</PropertyValue>
     <Company />
     <Plant />
     <DcdUserID />
