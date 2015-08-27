@@ -1,0 +1,3514 @@
+<?xml version="1.0" standalone="yes"?>
+<CustomizationDS xmlns="http://tempuri.org/XMLSchema.xsd">
+  <xs:schema id="CustomizationDS" targetNamespace="http://tempuri.org/XMLSchema.xsd" xmlns:mstns="http://tempuri.org/XMLSchema.xsd" xmlns="http://tempuri.org/XMLSchema.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+    <xs:element name="CustomizationDS" msdata:IsDataSet="true" msdata:Locale="" msprop:Key2="App.UD02Entry.UD02Form" msprop:CGCCode="" msprop:CommentText="" msprop:Key3="" msprop:Key1="BT2JT" msprop:Description="BT2JT" msprop:TypeCode="Customization" msprop:ProductID="EP" msprop:Company="" msprop:BuildVersion="9.05.702A">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Controls">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="FormsID" type="xs:string" />
+                <xs:element name="ControlName" type="xs:string" />
+                <xs:element name="Key" type="xs:string" />
+                <xs:element name="ParentControlKey" type="xs:string" />
+                <xs:element name="ControlType" type="xs:string" />
+                <xs:element name="Company" type="xs:string" />
+                <xs:element name="Plant" type="xs:string" />
+                <xs:element name="DcdUserId" type="xs:string" />
+                <xs:element name="GroupID" type="xs:string" />
+                <xs:element name="ControlsID" type="xs:string" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Properties">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="FormsID" type="xs:string" />
+                <xs:element name="ControlName" type="xs:string" />
+                <xs:element name="Key" type="xs:string" />
+                <xs:element name="PropertyName" type="xs:string" />
+                <xs:element name="PropertyValue" type="xs:string" />
+                <xs:element name="Company" type="xs:string" />
+                <xs:element name="Plant" type="xs:string" />
+                <xs:element name="DcdUserID" type="xs:string" />
+                <xs:element name="GroupID" type="xs:string" />
+                <xs:element name="PropertiesID" type="xs:string" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Controls>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grpJobData</ControlName>
+    <Key>d6d764c7-3156-48b3-9776-aeabf632df27</Key>
+    <ParentControlKey>d5488fbc-e47b-46b6-aa3e-9ab7d923315a</ParentControlKey>
+    <ControlType>Epicor.Mfg.UI.FrameWork.EpiGroupBox</ControlType>
+    <Company />
+    <Plant />
+    <DcdUserId />
+    <GroupID />
+    <ControlsID />
+  </Controls>
+  <Controls>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grpBurnTestData</ControlName>
+    <Key>81fedfd0-7f83-41f4-b7f3-32b118822642</Key>
+    <ParentControlKey>d5488fbc-e47b-46b6-aa3e-9ab7d923315a</ParentControlKey>
+    <ControlType>Epicor.Mfg.UI.FrameWork.EpiGroupBox</ControlType>
+    <Company />
+    <Plant />
+    <DcdUserId />
+    <GroupID />
+    <ControlsID />
+  </Controls>
+  <Controls>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grpLotTrackData</ControlName>
+    <Key>52e57fb7-1020-4b65-99d5-4577d5c59af3</Key>
+    <ParentControlKey>d5488fbc-e47b-46b6-aa3e-9ab7d923315a</ParentControlKey>
+    <ControlType>Epicor.Mfg.UI.FrameWork.EpiGroupBox</ControlType>
+    <Company />
+    <Plant />
+    <DcdUserId />
+    <GroupID />
+    <ControlsID />
+  </Controls>
+  <Controls>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grdJobData</ControlName>
+    <Key>95358c52-1df0-467a-9f10-7f01e09a7439</Key>
+    <ParentControlKey>d6d764c7-3156-48b3-9776-aeabf632df27</ParentControlKey>
+    <ControlType>Epicor.Mfg.UI.FrameWork.EpiUltraGrid</ControlType>
+    <Company />
+    <Plant />
+    <DcdUserId />
+    <GroupID />
+    <ControlsID />
+  </Controls>
+  <Controls>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grdBurnTestData</ControlName>
+    <Key>45e6a467-d013-4c54-8300-b73bf1154871</Key>
+    <ParentControlKey>81fedfd0-7f83-41f4-b7f3-32b118822642</ParentControlKey>
+    <ControlType>Epicor.Mfg.UI.FrameWork.EpiUltraGrid</ControlType>
+    <Company />
+    <Plant />
+    <DcdUserId />
+    <GroupID />
+    <ControlsID />
+  </Controls>
+  <Controls>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grdLotTrackData</ControlName>
+    <Key>f851d5fd-7707-4c43-abbb-0a99028d857d</Key>
+    <ParentControlKey>52e57fb7-1020-4b65-99d5-4577d5c59af3</ParentControlKey>
+    <ControlType>Epicor.Mfg.UI.FrameWork.EpiUltraGrid</ControlType>
+    <Company />
+    <Plant />
+    <DcdUserId />
+    <GroupID />
+    <ControlsID />
+  </Controls>
+  <Controls>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>txtJobNum</ControlName>
+    <Key>983351c5-08f4-469d-994a-4c31ef952d69</Key>
+    <ParentControlKey>d5488fbc-e47b-46b6-aa3e-9ab7d923315a</ParentControlKey>
+    <ControlType>Epicor.Mfg.UI.FrameWork.EpiTextBox</ControlType>
+    <Company />
+    <Plant />
+    <DcdUserId />
+    <GroupID />
+    <ControlsID />
+  </Controls>
+  <Controls>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>btnJobNum</ControlName>
+    <Key>98a6cb63-d063-41e2-b7e4-ce5a57503a9d</Key>
+    <ParentControlKey>d5488fbc-e47b-46b6-aa3e-9ab7d923315a</ParentControlKey>
+    <ControlType>Epicor.Mfg.UI.FrameWork.EpiButton</ControlType>
+    <Company />
+    <Plant />
+    <DcdUserId />
+    <GroupID />
+    <ControlsID />
+  </Controls>
+  <Controls>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>txtCopyFromJob</ControlName>
+    <Key>1215c3cb-68c4-48a3-9c85-2a8434d40196</Key>
+    <ParentControlKey>d5488fbc-e47b-46b6-aa3e-9ab7d923315a</ParentControlKey>
+    <ControlType>Epicor.Mfg.UI.FrameWork.EpiTextBox</ControlType>
+    <Company />
+    <Plant />
+    <DcdUserId />
+    <GroupID />
+    <ControlsID />
+  </Controls>
+  <Controls>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>txtBTSearch</ControlName>
+    <Key>afb135ef-4d25-4633-b2a3-6d28028f6947</Key>
+    <ParentControlKey>d5488fbc-e47b-46b6-aa3e-9ab7d923315a</ParentControlKey>
+    <ControlType>Epicor.Mfg.UI.FrameWork.EpiTextBox</ControlType>
+    <Company />
+    <Plant />
+    <DcdUserId />
+    <GroupID />
+    <ControlsID />
+  </Controls>
+  <Controls>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>btnAddBt</ControlName>
+    <Key>42e4c4c5-c2e7-40e8-a553-70f9999c845a</Key>
+    <ParentControlKey>d5488fbc-e47b-46b6-aa3e-9ab7d923315a</ParentControlKey>
+    <ControlType>Epicor.Mfg.UI.FrameWork.EpiButton</ControlType>
+    <Company />
+    <Plant />
+    <DcdUserId />
+    <GroupID />
+    <ControlsID />
+  </Controls>
+  <Controls>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>btnAdd</ControlName>
+    <Key>fe2b0d72-5db4-4c49-8fa5-e33df9ff414d</Key>
+    <ParentControlKey>d5488fbc-e47b-46b6-aa3e-9ab7d923315a</ParentControlKey>
+    <ControlType>Epicor.Mfg.UI.FrameWork.EpiButton</ControlType>
+    <Company />
+    <Plant />
+    <DcdUserId />
+    <GroupID />
+    <ControlsID />
+  </Controls>
+  <Controls>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>btnRemove</ControlName>
+    <Key>33a827f6-ef4a-4208-a974-2f5acf21b082</Key>
+    <ParentControlKey>d5488fbc-e47b-46b6-aa3e-9ab7d923315a</ParentControlKey>
+    <ControlType>Epicor.Mfg.UI.FrameWork.EpiButton</ControlType>
+    <Company />
+    <Plant />
+    <DcdUserId />
+    <GroupID />
+    <ControlsID />
+  </Controls>
+  <Controls>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>epicor.mfg.bo.dynamicquery.dll</ControlName>
+    <Key>EpiString.ExecutionPath*epicor.mfg.bo.dynamicquery.dll</Key>
+    <ParentControlKey />
+    <ControlType>AssemblyReference</ControlType>
+    <Company />
+    <Plant />
+    <DcdUserId />
+    <GroupID />
+    <ControlsID />
+  </Controls>
+  <Controls>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>epicor.mfg.ad.dynamicquery.dll</ControlName>
+    <Key>EpiString.ExecutionPath*epicor.mfg.ad.dynamicquery.dll</Key>
+    <ParentControlKey />
+    <ControlType>AssemblyReference</ControlType>
+    <Company />
+    <Plant />
+    <DcdUserId />
+    <GroupID />
+    <ControlsID />
+  </Controls>
+  <Controls>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>epicor.mfg.if.idynamicquery.dll</ControlName>
+    <Key>EpiString.ExecutionPath*epicor.mfg.if.idynamicquery.dll</Key>
+    <ParentControlKey />
+    <ControlType>AssemblyReference</ControlType>
+    <Company />
+    <Plant />
+    <DcdUserId />
+    <GroupID />
+    <ControlsID />
+  </Controls>
+  <Controls>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>epicor.mfg.core.session.dll</ControlName>
+    <Key>EpiString.ExecutionPath*epicor.mfg.core.session.dll</Key>
+    <ParentControlKey />
+    <ControlType>AssemblyReference</ControlType>
+    <Company />
+    <Plant />
+    <DcdUserId />
+    <GroupID />
+    <ControlsID />
+  </Controls>
+  <Controls>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>epicor.mfg.core.blconnectionpool.dll</ControlName>
+    <Key>EpiString.ExecutionPath*epicor.mfg.core.blconnectionpool.dll</Key>
+    <ParentControlKey />
+    <ControlType>AssemblyReference</ControlType>
+    <Company />
+    <Plant />
+    <DcdUserId />
+    <GroupID />
+    <ControlsID />
+  </Controls>
+  <Controls>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>epicor.mfg.lib.iboreader.dll</ControlName>
+    <Key>EpiString.ExecutionPath*epicor.mfg.lib.iboreader.dll</Key>
+    <ParentControlKey />
+    <ControlType>AssemblyReference</ControlType>
+    <Company />
+    <Plant />
+    <DcdUserId />
+    <GroupID />
+    <ControlsID />
+  </Controls>
+  <Controls>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>epicor.mfg.lib.boreader.dll</ControlName>
+    <Key>EpiString.ExecutionPath*epicor.mfg.lib.boreader.dll</Key>
+    <ParentControlKey />
+    <ControlType>AssemblyReference</ControlType>
+    <Company />
+    <Plant />
+    <DcdUserId />
+    <GroupID />
+    <ControlsID />
+  </Controls>
+  <Controls>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>epicor.mfg.bo.ud02.dll</ControlName>
+    <Key>EpiString.ExecutionPath*epicor.mfg.bo.ud02.dll</Key>
+    <ParentControlKey />
+    <ControlType>AssemblyReference</ControlType>
+    <Company />
+    <Plant />
+    <DcdUserId />
+    <GroupID />
+    <ControlsID />
+  </Controls>
+  <Controls>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>epicor.mfg.ad.ud02.dll</ControlName>
+    <Key>EpiString.ExecutionPath*epicor.mfg.ad.ud02.dll</Key>
+    <ParentControlKey />
+    <ControlType>AssemblyReference</ControlType>
+    <Company />
+    <Plant />
+    <DcdUserId />
+    <GroupID />
+    <ControlsID />
+  </Controls>
+  <Controls>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>epicor.mfg.if.iud02.dll</ControlName>
+    <Key>EpiString.ExecutionPath*epicor.mfg.if.iud02.dll</Key>
+    <ParentControlKey />
+    <ControlType>AssemblyReference</ControlType>
+    <Company />
+    <Plant />
+    <DcdUserId />
+    <GroupID />
+    <ControlsID />
+  </Controls>
+  <Controls>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>btnCopy</ControlName>
+    <Key>db0651d6-557d-441c-8ae5-cde052e8a0f6</Key>
+    <ParentControlKey>d5488fbc-e47b-46b6-aa3e-9ab7d923315a</ParentControlKey>
+    <ControlType>Epicor.Mfg.UI.FrameWork.EpiButton</ControlType>
+    <Company />
+    <Plant />
+    <DcdUserId />
+    <GroupID />
+    <ControlsID />
+  </Controls>
+  <Controls>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>lblGlobalJobNum</ControlName>
+    <Key>7ec845df-960b-42cc-ad9c-68fa382fac56</Key>
+    <ParentControlKey>d5488fbc-e47b-46b6-aa3e-9ab7d923315a</ParentControlKey>
+    <ControlType>Epicor.Mfg.UI.FrameWork.EpiLabel</ControlType>
+    <Company />
+    <Plant />
+    <DcdUserId />
+    <GroupID />
+    <ControlsID />
+  </Controls>
+  <Controls>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>lblGlobalBTNum</ControlName>
+    <Key>f5e9ae0f-694e-4e96-911b-83782f0febe2</Key>
+    <ParentControlKey>d5488fbc-e47b-46b6-aa3e-9ab7d923315a</ParentControlKey>
+    <ControlType>Epicor.Mfg.UI.FrameWork.EpiLabel</ControlType>
+    <Company />
+    <Plant />
+    <DcdUserId />
+    <GroupID />
+    <ControlsID />
+  </Controls>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>btnKeyField</ControlName>
+    <Key>3b06b8f2-a9d0-44d0-9aa1-4db6ddc60c77</Key>
+    <PropertyName>Top</PropertyName>
+    <PropertyValue>20</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>btnKeyField</ControlName>
+    <Key>3b06b8f2-a9d0-44d0-9aa1-4db6ddc60c77</Key>
+    <PropertyName>Left</PropertyName>
+    <PropertyValue>36</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>btnKeyField</ControlName>
+    <Key>3b06b8f2-a9d0-44d0-9aa1-4db6ddc60c77</Key>
+    <PropertyName>Width</PropertyName>
+    <PropertyValue>96</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>btnKeyField</ControlName>
+    <Key>3b06b8f2-a9d0-44d0-9aa1-4db6ddc60c77</Key>
+    <PropertyName>Height</PropertyName>
+    <PropertyValue>22</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>groupBox1</ControlName>
+    <Key>c205404a-5523-4c79-8a60-d9271a99b21d</Key>
+    <PropertyName>Visible</PropertyName>
+    <PropertyValue>False</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>btnKeyField</ControlName>
+    <Key>3b06b8f2-a9d0-44d0-9aa1-4db6ddc60c77</Key>
+    <PropertyName>Visible</PropertyName>
+    <PropertyValue>False</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>listPanel1</FormsID>
+    <ControlName>grdList</ControlName>
+    <Key>7908565c-cc3c-43d1-b85b-9921ad88fb89</Key>
+    <PropertyName>ChildIndex</PropertyName>
+    <PropertyValue>0</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>listPanel1</FormsID>
+    <ControlName>grdList</ControlName>
+    <Key>7908565c-cc3c-43d1-b85b-9921ad88fb89</Key>
+    <PropertyName>Anchor</PropertyName>
+    <PropertyValue>Top, Left</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grdList</ControlName>
+    <Key>7908565c-cc3c-43d1-b85b-9921ad88fb89</Key>
+    <PropertyName>Visible</PropertyName>
+    <PropertyValue>False</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>listPanel1</ControlName>
+    <Key>5bc5702d-bf5b-4bcd-8555-a5be760a5449</Key>
+    <PropertyName>Height</PropertyName>
+    <PropertyValue>352</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>listPanel1</ControlName>
+    <Key>5bc5702d-bf5b-4bcd-8555-a5be760a5449</Key>
+    <PropertyName>Width</PropertyName>
+    <PropertyValue>520</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>listPanel1</ControlName>
+    <Key>5bc5702d-bf5b-4bcd-8555-a5be760a5449</Key>
+    <PropertyName>Left</PropertyName>
+    <PropertyValue>64</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>listPanel1</ControlName>
+    <Key>5bc5702d-bf5b-4bcd-8555-a5be760a5449</Key>
+    <PropertyName>Top</PropertyName>
+    <PropertyValue>232</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>listPanel1</ControlName>
+    <Key>5bc5702d-bf5b-4bcd-8555-a5be760a5449</Key>
+    <PropertyName>Visible</PropertyName>
+    <PropertyValue>False</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>Customization</ControlName>
+    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
+    <PropertyName>Script</PropertyName>
+    <PropertyValue>// **************************************************
+// Custom code for UD02Form
+// Created: 4/3/2012 12:57:46 PM
+// **************************************************
+using System;
+using System.ComponentModel;
+using System.Data;
+using System.Diagnostics;
+using System.Windows.Forms;
+using Epicor.Mfg.BO;
+using Epicor.Mfg.UI;
+using Epicor.Mfg.UI.Adapters;
+using Epicor.Mfg.UI.Customization;
+using Epicor.Mfg.UI.ExtendedProps;
+using Epicor.Mfg.UI.FormFunctions;
+using Epicor.Mfg.UI.FrameWork;
+using Epicor.Mfg.UI.Searches;
+using Epicor.Mfg.Core;
+using Epicor.Mfg.Lib;
+using Infragistics.Win.UltraWinGrid;
+
+public class Script
+{
+	// ** Wizard Insert Location - Do Not Remove 'Begin/End Wizard Added Module Level Variables' Comments! **
+	// Begin Wizard Added Module Level Variables **
+
+	private EpiDataView edvUD02;
+	private UD02Adapter oTrans_adapter;
+	// End Wizard Added Module Level Variables **
+
+	// Add Custom Module Level Variables Here **
+	Epicor.Mfg.UI.App.UD02Entry.DetailPanel pnl;
+	DynamicQuery _dq;
+	BOReader _boReader;
+	public void InitializeCustomCode()
+	{
+		// ** Wizard Insert Location - Do not delete 'Begin/End Wizard Added Variable Initialization' lines **
+		// Begin Wizard Added Variable Initialization
+
+		this.baseToolbarsManager.ToolClick += new Infragistics.Win.UltraWinToolbars.ToolClickEventHandler(this.baseToolbarsManager_ToolClick);
+		this.UD02Form.Closing += new System.ComponentModel.CancelEventHandler(this.UD02Form_Closing);
+		this.edvUD02 = ((EpiDataView)(this.oTrans.EpiDataViews["UD02"]));
+		this.edvUD02.EpiViewNotification += new EpiViewNotification(this.edvUD02_EpiViewNotification);
+		this.oTrans_adapter = ((UD02Adapter)(this.csm.TransAdaptersHT["oTrans_adapter"]));
+		// End Wizard Added Variable Initialization
+
+		// Begin Wizard Added Custom Method Calls
+
+		this.btnJobNum.Click += new System.EventHandler(this.btnJobNum_Click);
+		this.txtJobNum.Validating += new System.ComponentModel.CancelEventHandler(this.txtJobNum_Validating);
+		_dq= new DynamicQuery(((Session)oTrans.Session).ConnectionPool);
+		_boReader= new BOReader(((Session)oTrans.Session).ConnectionPool);
+		this.grdJobData.AfterSelectChange += new Infragistics.Win.UltraWinGrid.AfterSelectChangeEventHandler(this.grdJobData_AfterSelectChange);
+		this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+		this.grdLotTrackData.BeforeRowsDeleted += new Infragistics.Win.UltraWinGrid.BeforeRowsDeletedEventHandler(this.grdLotTrackData_BeforeRowsDeleted);
+		this.grdLotTrackData.KeyDown += new System.Windows.Forms.KeyEventHandler(this.grdLotTrackData_KeyDown);
+		this.grdLotTrackData.BeforeRowInsert += new Infragistics.Win.UltraWinGrid.BeforeRowInsertEventHandler(this.grdLotTrackData_BeforeRowInsert);
+		this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
+		this.txtCopyFromJob.Validating += new System.ComponentModel.CancelEventHandler(this.txtCopyFromJob_Validating);
+		this.btnCopy.Click += new System.EventHandler(this.btnCopy_Click);
+		this.btnAddBt.Click += new System.EventHandler(this.btnAddBt_Click);
+		CreateRowRuleUD02Character03CustomCondition_h();;
+		CreateRowRuleUD02Key2CustomCondition_RED();;
+		this.grdJobData.InitializeRow += new Infragistics.Win.UltraWinGrid.InitializeRowEventHandler(this.grdJobData_InitializeRow);
+		// End Wizard Added Custom Method Calls
+	}
+
+	public void DestroyCustomCode()
+	{
+		// ** Wizard Insert Location - Do not delete 'Begin/End Wizard Added Object Disposal' lines **
+		// Begin Wizard Added Object Disposal
+
+		this.baseToolbarsManager.ToolClick -= new Infragistics.Win.UltraWinToolbars.ToolClickEventHandler(this.baseToolbarsManager_ToolClick);
+		this.UD02Form.Closing -= new System.ComponentModel.CancelEventHandler(this.UD02Form_Closing);
+		this.btnJobNum.Click -= new System.EventHandler(this.btnJobNum_Click);
+		this.edvUD02.EpiViewNotification -= new EpiViewNotification(this.edvUD02_EpiViewNotification);
+		this.edvUD02 = null;
+		this.txtJobNum.Validating -= new System.ComponentModel.CancelEventHandler(this.txtJobNum_Validating);
+		this.grdJobData.AfterSelectChange -= new Infragistics.Win.UltraWinGrid.AfterSelectChangeEventHandler(this.grdJobData_AfterSelectChange);
+		this.btnAdd.Click -= new System.EventHandler(this.btnAdd_Click);
+		this.grdLotTrackData.BeforeRowsDeleted -= new Infragistics.Win.UltraWinGrid.BeforeRowsDeletedEventHandler(this.grdLotTrackData_BeforeRowsDeleted);
+		this.grdLotTrackData.KeyDown -= new System.Windows.Forms.KeyEventHandler(this.grdLotTrackData_KeyDown);
+		this.grdLotTrackData.BeforeRowInsert -= new Infragistics.Win.UltraWinGrid.BeforeRowInsertEventHandler(this.grdLotTrackData_BeforeRowInsert);
+		this.btnRemove.Click -= new System.EventHandler(this.btnRemove_Click);
+		this.oTrans_adapter = null;
+		this.txtCopyFromJob.Validating -= new System.ComponentModel.CancelEventHandler(this.txtCopyFromJob_Validating);
+		this.btnCopy.Click -= new System.EventHandler(this.btnCopy_Click);
+		this.btnAddBt.Click -= new System.EventHandler(this.btnAddBt_Click);
+		this.grdJobData.InitializeRow -= new Infragistics.Win.UltraWinGrid.InitializeRowEventHandler(this.grdJobData_InitializeRow);
+		// End Wizard Added Object Disposal
+
+		// Begin Custom Code Disposal
+
+		// End Custom Code Disposal
+	}
+
+	private void baseToolbarsManager_ToolClick(object sender, Infragistics.Win.UltraWinToolbars.ToolClickEventArgs args)
+	{
+	}
+
+	private void UD02Form_Resize(object sender, EventArgs e)
+	{
+		/*int pnlWidth=pnl.Width;
+		decimal widthOfItem = (pnlWidth-40)/3;
+		grpLotTrackData.Width=(int)widthOfItem;
+		grpBurnTestData.Width=(int)widthOfItem;
+		grpJobData.Width=(int)widthOfItem;
+		grpJobData.Left=10;
+		grpBurnTestData.Left=grpJobData.Left+grpJobData.Width+10;
+		grpLotTrackData.Left=grpBurnTestData.Left+grpBurnTestData.Width+10;*/
+    }
+
+
+	private void UD02Form_Load(object sender, EventArgs args)
+	{
+		// Add Event Handler Code
+		UD02Form.Resize += new System.EventHandler(UD02Form_Resize);
+		UD02Form.ResizeEnd += new System.EventHandler(this.UD02Form_Resize);
+		UD02Form.MaximizeBox=false;
+		pnl = (Epicor.Mfg.UI.App.UD02Entry.DetailPanel)csm.GetNativeControlReference("d5488fbc-e47b-46b6-aa3e-9ab7d923315a");
+		grdJobData.Dock=System.Windows.Forms.DockStyle.Fill;
+		grdBurnTestData.Dock=System.Windows.Forms.DockStyle.Fill;
+		grdLotTrackData.Dock=System.Windows.Forms.DockStyle.Fill;
+	}
+
+	private void UD02Form_Closing(object sender, System.ComponentModel.CancelEventArgs args)
+	{
+		UD02Form.Resize -= new System.EventHandler(UD02Form_Resize);
+		// Add Event Handler Code
+	}
+
+
+	private void SearchOnJobEntryAdapterShowDialog()
+	{
+		// Wizard Generated Search Method
+		// You will need to call this method from another method in custom code
+		// For example, [Form]_Load or [Button]_Click
+
+		bool recSelected;
+		string whereClause = "JobHead.JobClosed=false";
+		System.Data.DataSet dsJobEntryAdapter = Epicor.Mfg.UI.FormFunctions.SearchFunctions.listLookup(this.oTrans, "JobEntryAdapter", out recSelected, true, whereClause);
+		if (recSelected)
+		{
+			System.Data.DataRow adapterRow = dsJobEntryAdapter.Tables[0].Rows[0];
+
+			// Map Search Fields to Application Fields
+			txtJobNum.Text = adapterRow["JobNum"].ToString();
+			txtJobNum.Focus();
+			btnJobNum.Focus();
+			
+		}
+	}
+
+	private void btnJobNum_Click(object sender, System.EventArgs args)
+	{
+		// ** Place Event Handling Code Here **
+		oTrans.Update();
+		SearchOnJobEntryAdapterShowDialog();
+		
+	}
+
+	private void edvUD02_EpiViewNotification(EpiDataView view, EpiNotifyArgs args)
+	{
+		// ** Argument Properties and Uses **
+		// view.dataView[args.Row]["FieldName"]
+		// args.Row, args.Column, args.Sender, args.NotifyType
+		// NotifyType.Initialize, NotifyType.AddRow, NotifyType.DeleteRow, NotifyType.InitLastView, NotifyType.InitAndResetTreeNodes
+		if ((args.NotifyType == EpiTransaction.NotifyType.AddRow))
+		{
+			if ((args.Row &gt; -1))
+			{
+			}
+		}
+	}
+
+	private void txtJobNum_Validating(object sender, System.ComponentModel.CancelEventArgs args)
+	{
+		// ** Place Event Handling Code Here **
+		oTrans.Update();
+		
+		if(!String.IsNullOrEmpty(txtJobNum.Text))
+		{
+			QueryDesignDataSet dqds = null;
+			dqds = _dq.GetByID("CIC68322-GetJobMtl1");
+			//Replace the Query Criterion w/ your own 
+			dqds.QueryWhereItem[0].RValue = txtJobNum.Text;
+			DataSet ds = _dq.Execute(dqds);
+			ds.Tables[0].Columns[0].Caption="Asm";
+			ds.Tables[0].Columns[1].Caption="Asm PartNum";	
+			ds.Tables[0].Columns[2].Caption="MTL P/N";
+			grdJobData.DataSource=ds.Tables[0];
+			string whereClause = "Key1='"+txtJobNum.Text+"'";
+			System.Collections.Hashtable whereClauses = new System.Collections.Hashtable(1);
+			whereClauses.Add("UD02", whereClause);
+			SearchOptions searchOptions = SearchOptions.CreateRuntimeSearch(whereClauses, DataSetMode.RowsDataSet);
+			oTrans_adapter.InvokeSearch(searchOptions);
+			if ((oTrans_adapter.UD02Data.UD02.Rows.Count &gt; 0))
+			{
+				edvUD02.Row = 0;
+			} else
+			{
+				edvUD02.Row = -1;
+			}
+			edvUD02.Notify(new EpiNotifyArgs(oTrans, edvUD02.Row,edvUD02.Column));
+			//oTrans_adapter.GetRows();
+		}
+	}
+
+	private void grdJobData_AfterSelectChange(object sender, Infragistics.Win.UltraWinGrid.AfterSelectChangeEventArgs args)
+	{
+		// ** Place Event Handling Code Here **
+		GetBTData();
+	}
+
+
+	private void GetBTData() 
+	{
+		try {
+			if (grdJobData.Selected.Rows.Count &gt; 0) {
+				string baqID = "CIC68322-BurnTestData";
+				DynamicQueryAdapter DQadpt = new DynamicQueryAdapter(UD02Form);
+				DQadpt.BOConnect();
+				
+	
+				Int32 topNRecords = 100000;
+				bool hasMoreRecords = true;
+				string resultFieldList = "";
+	
+				Epicor.Mfg.BO.QueryExecutionDataSet execSet = DQadpt.GetQueryExecutionParametersByID(baqID);
+	
+				DataRow targetRow = null;
+				DataRow targetRow1 = null;
+				DataTable tbl = execSet.Tables["ExecutionParameter"];
+				
+				
+				targetRow = execSet.Tables["ExecutionParameter"].NewRow();
+	
+				targetRow["ParameterName"] = "MtlPartNum";
+				targetRow["ParameterValue"] = grdJobData.Selected.Rows[0].Cells["JobMtl.PartNum"].Value.ToString() + "";
+				targetRow["ValueType"] = "Character";
+				targetRow["IsEmpty"] = false;
+				targetRow["RowIdent"] = "A";
+	
+				tbl.Rows.Add(targetRow);
+			
+				DQadpt.ExecuteByIDParametrized(baqID, execSet, resultFieldList, topNRecords, out hasMoreRecords);
+		
+				grdBurnTestData.DataSource = DQadpt.QueryResults;
+	
+				setupBurnTestGrid(grdBurnTestData);
+
+				oTrans.PushStatusText("", true);
+			} else {
+				oTrans.PushStatusText("No Job Data selected.", true);
+			}
+			
+		} catch (Exception e) {
+			MessageBox.Show("Unable to exec query: " + e.Message);
+			oTrans.PushStatusText("Unable to retrieve BT data", true);
+		}
+	}
+
+
+
+	private void setupBurnTestGrid(Epicor.Mfg.UI.FrameWork.EpiUltraGrid burnTestGrid) 
+	{
+		String msg = "";
+	
+		foreach (Infragistics.Win.UltraWinGrid.UltraGridColumn col in burnTestGrid.DisplayLayout.Bands[0].Columns) {
+//			msg = msg + col.Key + " / " + col.Header.Caption + "\r\n";
+			col.Hidden = true;
+		}
+		
+		//MessageBox.Show(msg);
+
+		burnTestGrid.DisplayLayout.Bands[0].Columns["UD01.Company"].Hidden = true;
+		burnTestGrid.DisplayLayout.Bands[0].Columns["UD01.Key1"].Hidden = false;
+		burnTestGrid.DisplayLayout.Bands[0].Columns["UD01.Key2"].Hidden = true;
+		burnTestGrid.DisplayLayout.Bands[0].Columns["UD01.Key3"].Hidden = true;
+		burnTestGrid.DisplayLayout.Bands[0].Columns["UD01.Key4"].Hidden = true;
+		burnTestGrid.DisplayLayout.Bands[0].Columns["UD01.Key5"].Hidden = true;
+		burnTestGrid.DisplayLayout.Bands[0].Columns["UD01.Character01"].Hidden = true;
+		burnTestGrid.DisplayLayout.Bands[0].Columns["UD01.Character02"].Hidden = false;
+		burnTestGrid.DisplayLayout.Bands[0].Columns["UD01.Character03"].Hidden = false;
+		burnTestGrid.DisplayLayout.Bands[0].Columns["UD01.Date01"].Hidden = false;
+		burnTestGrid.DisplayLayout.Bands[0].Columns["UD01.ShortChar02"].Hidden = false;
+
+		burnTestGrid.DisplayLayout.Bands[0].Columns["UD01.Company"].Header.Caption = "Company";
+		burnTestGrid.DisplayLayout.Bands[0].Columns["UD01.Key1"].Header.Caption = "BT #";
+		burnTestGrid.DisplayLayout.Bands[0].Columns["UD01.Key2"].Header.Caption = "Key2";
+		burnTestGrid.DisplayLayout.Bands[0].Columns["UD01.Key3"].Header.Caption = "Key3";
+		burnTestGrid.DisplayLayout.Bands[0].Columns["UD01.Key4"].Header.Caption = "Key4";
+		burnTestGrid.DisplayLayout.Bands[0].Columns["UD01.Key5"].Header.Caption = "Key5";
+		burnTestGrid.DisplayLayout.Bands[0].Columns["UD01.Character01"].Header.Caption = "Mtl P/N";
+		burnTestGrid.DisplayLayout.Bands[0].Columns["UD01.Character02"].Header.Caption = "Lot Num";
+		burnTestGrid.DisplayLayout.Bands[0].Columns["UD01.Character03"].Header.Caption = "Sup P/N";
+		burnTestGrid.DisplayLayout.Bands[0].Columns["UD01.Date01"].Header.Caption = "Date";
+		burnTestGrid.DisplayLayout.Bands[0].Columns["UD01.ShortChar02"].Header.Caption = "Plant";
+
+
+		//burnTestGrid.DisplayLayout.Bands[0].Columns["UD01.Number01"].Format = "##,###,###0.00";
+
+		//burnTestGrid.DisplayLayout.Bands[0].Columns["UD01.Number01"].CellAppearance.TextHAlign  = Infragistics.Win.HAlign.Right;
+
+		burnTestGrid.DisplayLayout.Bands[0].Override.AllowUpdate = Infragistics.Win.DefaultableBoolean.False;
+		burnTestGrid.DisplayLayout.Bands[0].Override.AllowDelete = Infragistics.Win.DefaultableBoolean.False;
+		burnTestGrid.DisplayLayout.Override.RowAlternateAppearance.BackColor = System.Drawing.Color.AliceBlue;
+	}
+
+
+	private void btnAdd_Click(object sender, System.EventArgs args)
+	{
+		// ** Place Event Handling Code Here **
+		if(grdBurnTestData.Selected.Rows.Count&gt;0)
+		{
+
+			foreach(Infragistics.Win.UltraWinGrid.UltraGridRow r in grdBurnTestData.Selected.Rows)
+			{
+				String partNum = r.Cells["UD01.Character01"].Value.ToString();
+				String BTNum = r.Cells["UD01.Key1"].Value.ToString();
+				String LotNum = r.Cells["UD01.Character02"].Value.ToString();
+				String SupPN = r.Cells["UD01.Character03"].Value.ToString();
+
+				String JobNum = txtJobNum.Text;
+				bool dup=false;
+				foreach(UD02DataSet.UD02Row r2 in oTrans_adapter.UD02Data.UD02)
+				{
+						if(r2.Key3.Equals(BTNum)){
+							dup=true;
+							break;
+						}
+				}
+				if(!dup){
+					oTrans.GetNew(JobNum,partNum,BTNum,LotNum,"");
+					foreach(DataRowView r1 in edvUD02.dataView)
+					{
+						if((string)r1["RowMod"] == "A")r1["Character03"] = SupPN;
+					}
+				}
+		MessageBox.Show("POP: " + SupPN);
+			}
+			grdBurnTestData.DeleteSelectedRows(false);
+			//oTrans.GetNew(1,
+			
+		}
+		else
+			MessageBox.Show("You must select at Least 1 Row from the Grid","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+		
+	}
+	private void grdLotTrackData_BeforeRowsDeleted(object sender, Infragistics.Win.UltraWinGrid.BeforeRowsDeletedEventArgs args)
+	{
+		// Event handling code generated by wizard.
+		args.Cancel = true;
+		try
+		{
+			this.oTrans.Delete();
+		} catch (System.Exception )
+		{
+		}
+	}
+
+	private void grdLotTrackData_KeyDown(object sender, System.Windows.Forms.KeyEventArgs args)
+	{
+		// Event handling code generated by wizard.
+		if ((args.KeyCode == Keys.Escape))
+		{
+			try
+			{
+				this.oTrans.Undo();
+			} catch (System.Exception )
+			{
+			}
+		}
+	}
+
+	private void grdLotTrackData_BeforeRowInsert(object sender, Infragistics.Win.UltraWinGrid.BeforeRowInsertEventArgs args)
+	{
+		// Event handling code generated by wizard.
+		args.Cancel = true;
+		this.oTrans.SetCurrentEvent(TransactionEvent.AddNewOnNewFromGrid);
+		try
+		{
+			this.oTrans.GetNew();
+		} catch (System.Exception )
+		{
+		}
+	}
+
+	private void btnRemove_Click(object sender, System.EventArgs args)
+	{
+		// ** Place Event Handling Code Here **
+		oTrans.Delete();
+		oTrans.Update();
+		foreach(UltraGridRow r in grdJobData.Rows)
+		{
+			
+				r.Appearance.BackColor=System.Drawing.Color.Red;
+		
+		}
+		string whereClause = "Key1='"+txtJobNum.Text+"'";
+		System.Collections.Hashtable whereClauses = new System.Collections.Hashtable(1);
+		whereClauses.Add("UD02", whereClause);
+		SearchOptions searchOptions = SearchOptions.CreateRuntimeSearch(whereClauses, DataSetMode.RowsDataSet);
+		oTrans_adapter.InvokeSearch(searchOptions);
+		if ((oTrans_adapter.UD02Data.UD02.Rows.Count &gt; 0))
+		{
+			edvUD02.Row = 0;
+		} else
+		{
+			edvUD02.Row = -1;
+		}
+		edvUD02.Notify(new EpiNotifyArgs(oTrans, edvUD02.Row,edvUD02.Column));
+		GetBTData();
+	}
+
+
+
+	private void txtCopyFromJob_Validating(object sender, System.ComponentModel.CancelEventArgs args)
+	{
+		// ** Place Event Handling Code Here **
+	}
+
+
+	private DataTable GetCopyJobLotTrackedData(String copyJobNum) 
+	{
+		DataTable dt = null;
+
+		try {
+
+			string baqID = "CIC68322-GlobalLotTestData";
+			DynamicQueryAdapter DQadpt = new DynamicQueryAdapter(UD02Form);
+			DQadpt.BOConnect();
+
+			Int32 topNRecords = 100000;
+			bool hasMoreRecords = true;
+			string resultFieldList = "";
+			
+			Epicor.Mfg.BO.QueryExecutionDataSet execSet = DQadpt.GetQueryExecutionParametersByID(baqID);
+
+			DataRow targetRow = null;
+			DataRow targetRow1 = null;
+			DataTable tbl = execSet.Tables["ExecutionParameter"];
+			
+			targetRow = execSet.Tables["ExecutionParameter"].NewRow();
+
+			targetRow["ParameterName"] = "CopyJobNum";
+			targetRow["ParameterValue"] = copyJobNum + "";
+			targetRow["ValueType"] = "Character";
+			targetRow["IsEmpty"] = false;
+			targetRow["RowIdent"] = "A";
+
+			tbl.Rows.Add(targetRow);
+		
+			DQadpt.ExecuteByIDParametrized(baqID, execSet, resultFieldList, topNRecords, out hasMoreRecords);
+	
+			dt = DQadpt.QueryResults.Tables[0];
+			
+		} catch (Exception e) {
+			MessageBox.Show("Unable to exec query: " + e.Message);
+		}
+
+		return dt;
+	}
+
+
+	private DataTable GetAddBTLotTrackedData(String BTNum) 
+	{
+		DataTable dt = null;
+
+		try {
+
+			string baqID = "CIC68322-GlobalBurnTestData";
+			DynamicQueryAdapter DQadpt = new DynamicQueryAdapter(UD02Form);
+			DQadpt.BOConnect();
+
+			Int32 topNRecords = 100000;
+			bool hasMoreRecords = true;
+			string resultFieldList = "";
+			
+			Epicor.Mfg.BO.QueryExecutionDataSet execSet = DQadpt.GetQueryExecutionParametersByID(baqID);
+
+			DataRow targetRow = null;
+			DataRow targetRow1 = null;
+			DataTable tbl = execSet.Tables["ExecutionParameter"];
+			
+			targetRow = execSet.Tables["ExecutionParameter"].NewRow();
+
+			targetRow["ParameterName"] = "BTNum";
+			targetRow["ParameterValue"] = BTNum + "";
+			targetRow["ValueType"] = "Character";
+			targetRow["IsEmpty"] = false;
+			targetRow["RowIdent"] = "A";
+
+			tbl.Rows.Add(targetRow);
+		
+			DQadpt.ExecuteByIDParametrized(baqID, execSet, resultFieldList, topNRecords, out hasMoreRecords);
+	
+			dt = DQadpt.QueryResults.Tables[0];
+			
+		} catch (Exception e) {
+			MessageBox.Show("Unable to exec query: " + e.Message);
+		}
+
+		return dt;
+	}
+
+	private void btnCopy_Click(object sender, System.EventArgs args)
+	{
+		oTrans.PushStatusText("Copy Job Lot Data...", true);
+		
+		String msg = "";
+
+		// ** Place Event Handling Code Here **
+		if (!String.IsNullOrEmpty(txtCopyFromJob.Text) &amp;&amp; !String.IsNullOrEmpty(txtJobNum.Text))
+		{
+			oTrans.PushStatusText("Copy Job Number Found...", true);
+
+			DataTable dt = GetCopyJobLotTrackedData(txtCopyFromJob.Text);
+			if (dt != null) {
+	
+				foreach(DataRow dr in dt.Rows)
+				{
+					msg = String.Format("Lot Data: {0}, {1}, {2}, {3}, {4}, {5}, {6}", dr["UD02.Company"], dr["UD02.Key1"], dr["UD02.Key2"], dr["UD02.Key3"], dr["UD02.Key4"], dr["UD02.Key5"], dr["UD02.Character03"]);
+					oTrans.PushStatusText(msg, true);
+
+					bool dup=false;
+					foreach(UD02DataSet.UD02Row r2 in oTrans_adapter.UD02Data.UD02)
+					{
+						if (r2.Key2.Equals(dr["UD02.Key2"].ToString()) &amp;&amp; 
+								r2.Key3.Equals(dr["UD02.Key3"].ToString()) &amp;&amp; 
+								r2.Key4.Equals(dr["UD02.Key4"].ToString()) &amp;&amp; 
+								r2.Key5.Equals(dr["UD02.Key5"].ToString()) &amp;&amp;
+								r2.Character03.Equals(dr["UD02.Character03"].ToString())
+
+						   ){
+
+							oTrans.PushStatusText(msg, true);
+							dup=true;
+							break;
+						}
+					}
+					if(!dup)						{
+						oTrans.GetNew(txtJobNum.Text,dr["UD02.Key2"].ToString(),dr["UD02.Key3"].ToString(),dr["UD02.Key4"].ToString(),"");
+						//edvUD02.dataView[edvUD02.Row]["Character03"]="Copied By: "+((Session)oTrans.Session).UserID+" From Job: "+txtCopyFromJob.Text+" In Company: "+dr["UD02.Company"].ToString();
+						edvUD02.Notify(new EpiNotifyArgs(oTrans,edvUD02.Row,edvUD02.Column));
+					}
+				}
+			} else {
+				MessageBox.Show("Now Lot Data found for Copy Job","Warning",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+			}
+		}
+		else {
+			MessageBox.Show("You must have a Job To Copy from Selected","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+		}
+
+		oTrans.PushStatusText("Copy Complete.", false);
+	}
+
+
+	private void btnAddBt_Click(object sender, System.EventArgs args)
+	{
+		oTrans.PushStatusText("Add BT to Lot Data...", true);
+		
+		String msg = "";
+
+		// ** Place Event Handling Code Here **
+		if (!String.IsNullOrEmpty(txtBTSearch.Text))
+		{
+			oTrans.PushStatusText("Add BT Number Found...", true);
+
+			//DataTable dt = GetCopyJobLotTrackedData(txtCopyFromJob.Text);
+			DataTable dt = GetAddBTLotTrackedData(txtBTSearch.Text);
+			if (dt != null) {
+				oTrans.PushStatusText("Found Add BT Lot Data...", true);
+	
+				String partNum = dt.Rows[0]["UD01.Character01"].ToString();
+				String BTNum = dt.Rows[0]["UD01.Key1"].ToString();
+				String LotNum = dt.Rows[0]["UD01.Character02"].ToString();
+				String SupPN = dt.Rows[0]["UD01.Character03"].ToString();
+
+				String JobNum = txtJobNum.Text;
+	
+				bool dup=false;
+				foreach(UD02DataSet.UD02Row r2 in oTrans_adapter.UD02Data.UD02)
+				{
+					if(r2.Key3.Equals(BTNum)) {
+						dup=true;
+						break;
+					}
+				}
+				if(!dup) {
+					oTrans.GetNew(JobNum,partNum,BTNum,LotNum,"");
+				}	
+				GetBTData();
+			} else {
+				MessageBox.Show("Burn Test # Data found for BT Add","Warning",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+			}
+		}
+		else
+			MessageBox.Show("You must enter a Burn Test # to Add","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+	}
+
+
+	private void CreateRowRuleUD02Character03CustomCondition_h()
+	{
+		// Description: CopiedData
+		// **** begin autogenerated code ****
+		RuleAction warningUD02_RowAction = RuleAction.AddRowSettings(this.oTrans, "UD02", true, SettingStyle.Warning);
+		RuleAction[] ruleActions = new RuleAction[] {
+				warningUD02_RowAction};
+		// Create RowRule and add to the EpiDataView.
+		RowRule rrCreateRowRuleUD02Character03CustomCondition_h = new RowRule("UD02.Character03", new RowRuleConditionDelegate2(this.UD02Character03h_CustomRuleCondition), "h", ruleActions);
+		((EpiDataView)(this.oTrans.EpiDataViews["UD02"])).AddRowRule(rrCreateRowRuleUD02Character03CustomCondition_h);
+		// **** end autogenerated code ****
+	}
+
+
+	private bool UD02Character03h_CustomRuleCondition(Epicor.Mfg.UI.ExtendedProps.RowRuleDelegateArgs args)
+	{
+		bool result = false;
+		// ** RowRuleDelegateArgs Properties: args.Arg1, args.Arg2, args.Context, args.Row
+		// ** put Row Rule condition evaluation logic here
+		
+		return !String.IsNullOrEmpty(args.Arg1.ToString());
+	}
+
+
+	private void CreateRowRuleUD02Key2CustomCondition_RED()
+	{
+		// Description: NoMatchRow
+		// **** begin autogenerated code ****
+		RuleAction[] ruleActions = new RuleAction[0];
+		// Create RowRule and add to the EpiDataView.
+		// Dummy Context Object
+		object contextObject = null;
+		RowRule rrCreateRowRuleUD02Key2CustomCondition_RED = new RowRule("UD02.Key2", new RowRuleConditionDelegate2(this.UD02Key2RED_CustomRuleCondition), "RED", new RowRuleActionDelegate2(this.UD02Key2DelegateRED_CustomRuleAction), contextObject);
+		((EpiDataView)(this.oTrans.EpiDataViews["UD02"])).AddRowRule(rrCreateRowRuleUD02Key2CustomCondition_RED);
+		// **** end autogenerated code ****
+	}
+
+
+	private bool UD02Key2RED_CustomRuleCondition(Epicor.Mfg.UI.ExtendedProps.RowRuleDelegateArgs args)
+	{
+		bool result = false;
+		// ** RowRuleDelegateArgs Properties: args.Arg1, args.Arg2, args.Context, args.Row
+		// ** put Row Rule condition evaluation logic here
+		
+		foreach(UltraGridRow r in grdJobData.Rows)
+		{
+			
+			if(r.Cells[2].Value.ToString().ToUpper().Equals(args.Arg1.ToString().ToUpper()))
+			{
+				r.Appearance.BackColor=System.Drawing.Color.White;
+				
+			}
+			
+		}
+		return result;
+	}
+
+
+	private void UD02Key2DelegateRED_CustomRuleAction(Epicor.Mfg.UI.ExtendedProps.RowRuleDelegateArgs args)
+	{
+		// ** RowRuleDelegateArgs Properties: args.Arg1, args.Arg2, args.Context, args.Row
+		// ** put custom Rule Action logic here
+	}
+
+
+	private void grdJobData_InitializeRow(object sender, Infragistics.Win.UltraWinGrid.InitializeRowEventArgs args)
+	{
+		// ** Place Event Handling Code Here **
+		args.Row.Appearance.BackColor=System.Drawing.Color.Red;
+	}
+
+}
+</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>Customization</ControlName>
+    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
+    <PropertyName>Language</PropertyName>
+    <PropertyValue>CSharp</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>UD02Form</ControlName>
+    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
+    <PropertyName>Top</PropertyName>
+    <PropertyValue>126</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>UD02Form</ControlName>
+    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
+    <PropertyName>Left</PropertyName>
+    <PropertyValue>51</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>UD02Form</ControlName>
+    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
+    <PropertyName>Height</PropertyName>
+    <PropertyValue>794</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>UD02Form</ControlName>
+    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
+    <PropertyName>Width</PropertyName>
+    <PropertyValue>1190</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>baseDockManager</ControlName>
+    <Key>baseDockManager2dcd1674-5e34-4d98-b493-c75747027376</Key>
+    <PropertyName>LayoutXML</PropertyName>
+    <PropertyValue>&lt;SOAP-ENV:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:clr="http://schemas.microsoft.com/soap/encoding/clr/1.0" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"&gt;&lt;SOAP-ENV:Body&gt;&lt;a1:UltraDockManager id="ref-1" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinDock/Infragistics2.Win.UltraWinDock.v10.3"&gt;&lt;ControlPanes href="#ref-3" /&gt;&lt;DockAreas href="#ref-4" /&gt;&lt;ShowCloseButton&gt;false&lt;/ShowCloseButton&gt;&lt;UseDefaultContextMenus&gt;false&lt;/UseDefaultContextMenus&gt;&lt;CompressUnpinnedTabs&gt;false&lt;/CompressUnpinnedTabs&gt;&lt;LayoutStyle&gt;1&lt;/LayoutStyle&gt;&lt;UnpinnedTabInfoLeft href="#ref-5" /&gt;&lt;UnpinnedTabInfoTop href="#ref-6" /&gt;&lt;UnpinnedTabInfoBottom href="#ref-7" /&gt;&lt;UnpinnedTabInfoRight href="#ref-8" /&gt;&lt;/a1:UltraDockManager&gt;&lt;a1:DockableControlPanesCollection id="ref-3" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinDock/Infragistics2.Win.UltraWinDock.v10.3"&gt;&lt;Count&gt;2&lt;/Count&gt;&lt;/a1:DockableControlPanesCollection&gt;&lt;a1:DockAreasCollection id="ref-4" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinDock/Infragistics2.Win.UltraWinDock.v10.3"&gt;&lt;Count&gt;2&lt;/Count&gt;&lt;_x0030_ href="#ref-9" /&gt;&lt;_x0031_ href="#ref-10" /&gt;&lt;/a1:DockAreasCollection&gt;&lt;a1:UnpinnedTabAreaInfo id="ref-5" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinDock/Infragistics2.Win.UltraWinDock.v10.3"&gt;&lt;tabGroups href="#ref-11" /&gt;&lt;tabAreaSide&gt;Left&lt;/tabAreaSide&gt;&lt;/a1:UnpinnedTabAreaInfo&gt;&lt;a1:UnpinnedTabAreaInfo id="ref-6" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinDock/Infragistics2.Win.UltraWinDock.v10.3"&gt;&lt;tabGroups href="#ref-12" /&gt;&lt;tabAreaSide&gt;Top&lt;/tabAreaSide&gt;&lt;/a1:UnpinnedTabAreaInfo&gt;&lt;a1:UnpinnedTabAreaInfo id="ref-7" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinDock/Infragistics2.Win.UltraWinDock.v10.3"&gt;&lt;tabGroups href="#ref-13" /&gt;&lt;tabAreaSide&gt;Bottom&lt;/tabAreaSide&gt;&lt;/a1:UnpinnedTabAreaInfo&gt;&lt;a1:UnpinnedTabAreaInfo id="ref-8" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinDock/Infragistics2.Win.UltraWinDock.v10.3"&gt;&lt;tabGroups href="#ref-14" /&gt;&lt;tabAreaSide&gt;Right&lt;/tabAreaSide&gt;&lt;/a1:UnpinnedTabAreaInfo&gt;&lt;a1:DockAreaPane id="ref-9" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinDock/Infragistics2.Win.UltraWinDock.v10.3"&gt;&lt;Size xsi:type="a2:Size" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing"&gt;&lt;width&gt;197&lt;/width&gt;&lt;height&gt;426&lt;/height&gt;&lt;/Size&gt;&lt;Id xsi:type="a3:Guid" xmlns:a3="http://schemas.microsoft.com/clr/ns/System"&gt;&lt;_a&gt;940569294&lt;/_a&gt;&lt;_b&gt;-22605&lt;/_b&gt;&lt;_c&gt;16647&lt;/_c&gt;&lt;_d&gt;140&lt;/_d&gt;&lt;_e&gt;234&lt;/_e&gt;&lt;_f&gt;20&lt;/_f&gt;&lt;_g&gt;246&lt;/_g&gt;&lt;_h&gt;227&lt;/_h&gt;&lt;_i&gt;255&lt;/_i&gt;&lt;_j&gt;84&lt;/_j&gt;&lt;_k&gt;102&lt;/_k&gt;&lt;/Id&gt;&lt;DockedParentId xsi:type="a3:Guid" xmlns:a3="http://schemas.microsoft.com/clr/ns/System"&gt;&lt;_a&gt;0&lt;/_a&gt;&lt;_b&gt;0&lt;/_b&gt;&lt;_c&gt;0&lt;/_c&gt;&lt;_d&gt;0&lt;/_d&gt;&lt;_e&gt;0&lt;/_e&gt;&lt;_f&gt;0&lt;/_f&gt;&lt;_g&gt;0&lt;/_g&gt;&lt;_h&gt;0&lt;/_h&gt;&lt;_i&gt;0&lt;/_i&gt;&lt;_j&gt;0&lt;/_j&gt;&lt;_k&gt;0&lt;/_k&gt;&lt;/DockedParentId&gt;&lt;FloatingParentId xsi:type="a3:Guid" xmlns:a3="http://schemas.microsoft.com/clr/ns/System"&gt;&lt;_a&gt;0&lt;/_a&gt;&lt;_b&gt;0&lt;/_b&gt;&lt;_c&gt;0&lt;/_c&gt;&lt;_d&gt;0&lt;/_d&gt;&lt;_e&gt;0&lt;/_e&gt;&lt;_f&gt;0&lt;/_f&gt;&lt;_g&gt;0&lt;/_g&gt;&lt;_h&gt;0&lt;/_h&gt;&lt;_i&gt;0&lt;/_i&gt;&lt;_j&gt;0&lt;/_j&gt;&lt;_k&gt;0&lt;/_k&gt;&lt;/FloatingParentId&gt;&lt;Panes href="#ref-16" /&gt;&lt;SelectedTabIndex&gt;0&lt;/SelectedTabIndex&gt;&lt;DockedLocation&gt;1&lt;/DockedLocation&gt;&lt;/a1:DockAreaPane&gt;&lt;a1:DockAreaPane id="ref-10" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinDock/Infragistics2.Win.UltraWinDock.v10.3"&gt;&lt;Size xsi:type="a2:Size" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing"&gt;&lt;width&gt;715&lt;/width&gt;&lt;height&gt;426&lt;/height&gt;&lt;/Size&gt;&lt;Id xsi:type="a3:Guid" xmlns:a3="http://schemas.microsoft.com/clr/ns/System"&gt;&lt;_a&gt;-2128669578&lt;/_a&gt;&lt;_b&gt;-13872&lt;/_b&gt;&lt;_c&gt;18792&lt;/_c&gt;&lt;_d&gt;157&lt;/_d&gt;&lt;_e&gt;228&lt;/_e&gt;&lt;_f&gt;199&lt;/_f&gt;&lt;_g&gt;184&lt;/_g&gt;&lt;_h&gt;41&lt;/_h&gt;&lt;_i&gt;243&lt;/_i&gt;&lt;_j&gt;97&lt;/_j&gt;&lt;_k&gt;123&lt;/_k&gt;&lt;/Id&gt;&lt;DockedParentId xsi:type="a3:Guid" xmlns:a3="http://schemas.microsoft.com/clr/ns/System"&gt;&lt;_a&gt;0&lt;/_a&gt;&lt;_b&gt;0&lt;/_b&gt;&lt;_c&gt;0&lt;/_c&gt;&lt;_d&gt;0&lt;/_d&gt;&lt;_e&gt;0&lt;/_e&gt;&lt;_f&gt;0&lt;/_f&gt;&lt;_g&gt;0&lt;/_g&gt;&lt;_h&gt;0&lt;/_h&gt;&lt;_i&gt;0&lt;/_i&gt;&lt;_j&gt;0&lt;/_j&gt;&lt;_k&gt;0&lt;/_k&gt;&lt;/DockedParentId&gt;&lt;FloatingParentId xsi:type="a3:Guid" xmlns:a3="http://schemas.microsoft.com/clr/ns/System"&gt;&lt;_a&gt;0&lt;/_a&gt;&lt;_b&gt;0&lt;/_b&gt;&lt;_c&gt;0&lt;/_c&gt;&lt;_d&gt;0&lt;/_d&gt;&lt;_e&gt;0&lt;/_e&gt;&lt;_f&gt;0&lt;/_f&gt;&lt;_g&gt;0&lt;/_g&gt;&lt;_h&gt;0&lt;/_h&gt;&lt;_i&gt;0&lt;/_i&gt;&lt;_j&gt;0&lt;/_j&gt;&lt;_k&gt;0&lt;/_k&gt;&lt;/FloatingParentId&gt;&lt;Panes href="#ref-17" /&gt;&lt;ChildPaneStyle&gt;2&lt;/ChildPaneStyle&gt;&lt;SelectedTabIndex&gt;0&lt;/SelectedTabIndex&gt;&lt;/a1:DockAreaPane&gt;&lt;SOAP-ENC:Array id="ref-11" SOAP-ENC:arrayType="a1:UnpinnedTabGroupInfo[1]" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinDock/Infragistics2.Win.UltraWinDock.v10.3"&gt;&lt;item href="#ref-18" /&gt;&lt;/SOAP-ENC:Array&gt;&lt;SOAP-ENC:Array id="ref-12" SOAP-ENC:arrayType="a1:UnpinnedTabGroupInfo[0]" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinDock/Infragistics2.Win.UltraWinDock.v10.3"&gt;&lt;/SOAP-ENC:Array&gt;&lt;SOAP-ENC:Array id="ref-13" SOAP-ENC:arrayType="a1:UnpinnedTabGroupInfo[0]" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinDock/Infragistics2.Win.UltraWinDock.v10.3"&gt;&lt;/SOAP-ENC:Array&gt;&lt;SOAP-ENC:Array id="ref-14" SOAP-ENC:arrayType="a1:UnpinnedTabGroupInfo[0]" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinDock/Infragistics2.Win.UltraWinDock.v10.3"&gt;&lt;/SOAP-ENC:Array&gt;&lt;a1:DockablePanesCollection id="ref-16" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinDock/Infragistics2.Win.UltraWinDock.v10.3"&gt;&lt;Count&gt;1&lt;/Count&gt;&lt;_x0030_ href="#ref-19" /&gt;&lt;/a1:DockablePanesCollection&gt;&lt;a1:DockablePanesCollection id="ref-17" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinDock/Infragistics2.Win.UltraWinDock.v10.3"&gt;&lt;Count&gt;1&lt;/Count&gt;&lt;_x0030_ href="#ref-20" /&gt;&lt;/a1:DockablePanesCollection&gt;&lt;a1:UnpinnedTabGroupInfo id="ref-18" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinDock/Infragistics2.Win.UltraWinDock.v10.3"&gt;&lt;groupPaneId&gt;&lt;_a&gt;940569294&lt;/_a&gt;&lt;_b&gt;-22605&lt;/_b&gt;&lt;_c&gt;16647&lt;/_c&gt;&lt;_d&gt;140&lt;/_d&gt;&lt;_e&gt;234&lt;/_e&gt;&lt;_f&gt;20&lt;/_f&gt;&lt;_g&gt;246&lt;/_g&gt;&lt;_h&gt;227&lt;/_h&gt;&lt;_i&gt;255&lt;/_i&gt;&lt;_j&gt;84&lt;/_j&gt;&lt;_k&gt;102&lt;/_k&gt;&lt;/groupPaneId&gt;&lt;controlPaneOrder href="#ref-21" /&gt;&lt;selectedPaneId&gt;&lt;_a&gt;-19919160&lt;/_a&gt;&lt;_b&gt;27921&lt;/_b&gt;&lt;_c&gt;19789&lt;/_c&gt;&lt;_d&gt;185&lt;/_d&gt;&lt;_e&gt;148&lt;/_e&gt;&lt;_f&gt;102&lt;/_f&gt;&lt;_g&gt;5&lt;/_g&gt;&lt;_h&gt;81&lt;/_h&gt;&lt;_i&gt;8&lt;/_i&gt;&lt;_j&gt;3&lt;/_j&gt;&lt;_k&gt;51&lt;/_k&gt;&lt;/selectedPaneId&gt;&lt;/a1:UnpinnedTabGroupInfo&gt;&lt;a1:DockableControlPane id="ref-19" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinDock/Infragistics2.Win.UltraWinDock.v10.3"&gt;&lt;Text id="ref-22"&gt;UD02&lt;/Text&gt;&lt;Size xsi:type="a2:Size" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing"&gt;&lt;width&gt;100&lt;/width&gt;&lt;height&gt;100&lt;/height&gt;&lt;/Size&gt;&lt;Id xsi:type="a3:Guid" xmlns:a3="http://schemas.microsoft.com/clr/ns/System"&gt;&lt;_a&gt;-19919160&lt;/_a&gt;&lt;_b&gt;27921&lt;/_b&gt;&lt;_c&gt;19789&lt;/_c&gt;&lt;_d&gt;185&lt;/_d&gt;&lt;_e&gt;148&lt;/_e&gt;&lt;_f&gt;102&lt;/_f&gt;&lt;_g&gt;5&lt;/_g&gt;&lt;_h&gt;81&lt;/_h&gt;&lt;_i&gt;8&lt;/_i&gt;&lt;_j&gt;3&lt;/_j&gt;&lt;_k&gt;51&lt;/_k&gt;&lt;/Id&gt;&lt;DockedParentId xsi:type="a3:Guid" xmlns:a3="http://schemas.microsoft.com/clr/ns/System"&gt;&lt;_a&gt;940569294&lt;/_a&gt;&lt;_b&gt;-22605&lt;/_b&gt;&lt;_c&gt;16647&lt;/_c&gt;&lt;_d&gt;140&lt;/_d&gt;&lt;_e&gt;234&lt;/_e&gt;&lt;_f&gt;20&lt;/_f&gt;&lt;_g&gt;246&lt;/_g&gt;&lt;_h&gt;227&lt;/_h&gt;&lt;_i&gt;255&lt;/_i&gt;&lt;_j&gt;84&lt;/_j&gt;&lt;_k&gt;102&lt;/_k&gt;&lt;/DockedParentId&gt;&lt;FloatingParentId xsi:type="a3:Guid" xmlns:a3="http://schemas.microsoft.com/clr/ns/System"&gt;&lt;_a&gt;0&lt;/_a&gt;&lt;_b&gt;0&lt;/_b&gt;&lt;_c&gt;0&lt;/_c&gt;&lt;_d&gt;0&lt;/_d&gt;&lt;_e&gt;0&lt;/_e&gt;&lt;_f&gt;0&lt;/_f&gt;&lt;_g&gt;0&lt;/_g&gt;&lt;_h&gt;0&lt;/_h&gt;&lt;_i&gt;0&lt;/_i&gt;&lt;_j&gt;0&lt;/_j&gt;&lt;_k&gt;0&lt;/_k&gt;&lt;/FloatingParentId&gt;&lt;Key href="#ref-22" /&gt;&lt;ControlName id="ref-23"&gt;epiTreeViewPanel1&lt;/ControlName&gt;&lt;FlyoutSize xsi:type="a2:Size" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing"&gt;&lt;width&gt;197&lt;/width&gt;&lt;height&gt;-1&lt;/height&gt;&lt;/FlyoutSize&gt;&lt;OriginalControlBounds xsi:type="a2:Rectangle" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing"&gt;&lt;x&gt;168&lt;/x&gt;&lt;y&gt;64&lt;/y&gt;&lt;width&gt;150&lt;/width&gt;&lt;height&gt;150&lt;/height&gt;&lt;/OriginalControlBounds&gt;&lt;Pinned&gt;false&lt;/Pinned&gt;&lt;ControlPaneIndex&gt;0&lt;/ControlPaneIndex&gt;&lt;/a1:DockableControlPane&gt;&lt;a1:DockableControlPane id="ref-20" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinDock/Infragistics2.Win.UltraWinDock.v10.3"&gt;&lt;Text id="ref-24"&gt;UD02 Maintenance&lt;/Text&gt;&lt;Size xsi:type="a2:Size" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing"&gt;&lt;width&gt;534&lt;/width&gt;&lt;height&gt;363&lt;/height&gt;&lt;/Size&gt;&lt;Id xsi:type="a3:Guid" xmlns:a3="http://schemas.microsoft.com/clr/ns/System"&gt;&lt;_a&gt;-1503463071&lt;/_a&gt;&lt;_b&gt;10530&lt;/_b&gt;&lt;_c&gt;19197&lt;/_c&gt;&lt;_d&gt;153&lt;/_d&gt;&lt;_e&gt;108&lt;/_e&gt;&lt;_f&gt;118&lt;/_f&gt;&lt;_g&gt;136&lt;/_g&gt;&lt;_h&gt;207&lt;/_h&gt;&lt;_i&gt;104&lt;/_i&gt;&lt;_j&gt;160&lt;/_j&gt;&lt;_k&gt;111&lt;/_k&gt;&lt;/Id&gt;&lt;DockedParentId xsi:type="a3:Guid" xmlns:a3="http://schemas.microsoft.com/clr/ns/System"&gt;&lt;_a&gt;-2128669578&lt;/_a&gt;&lt;_b&gt;-13872&lt;/_b&gt;&lt;_c&gt;18792&lt;/_c&gt;&lt;_d&gt;157&lt;/_d&gt;&lt;_e&gt;228&lt;/_e&gt;&lt;_f&gt;199&lt;/_f&gt;&lt;_g&gt;184&lt;/_g&gt;&lt;_h&gt;41&lt;/_h&gt;&lt;_i&gt;243&lt;/_i&gt;&lt;_j&gt;97&lt;/_j&gt;&lt;_k&gt;123&lt;/_k&gt;&lt;/DockedParentId&gt;&lt;FloatingParentId xsi:type="a3:Guid" xmlns:a3="http://schemas.microsoft.com/clr/ns/System"&gt;&lt;_a&gt;0&lt;/_a&gt;&lt;_b&gt;0&lt;/_b&gt;&lt;_c&gt;0&lt;/_c&gt;&lt;_d&gt;0&lt;/_d&gt;&lt;_e&gt;0&lt;/_e&gt;&lt;_f&gt;0&lt;/_f&gt;&lt;_g&gt;0&lt;/_g&gt;&lt;_h&gt;0&lt;/_h&gt;&lt;_i&gt;0&lt;/_i&gt;&lt;_j&gt;0&lt;/_j&gt;&lt;_k&gt;0&lt;/_k&gt;&lt;/FloatingParentId&gt;&lt;Key href="#ref-24" /&gt;&lt;ControlName id="ref-25"&gt;mainPanel1&lt;/ControlName&gt;&lt;OriginalControlBounds xsi:type="a2:Rectangle" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing"&gt;&lt;x&gt;360&lt;/x&gt;&lt;y&gt;136&lt;/y&gt;&lt;width&gt;624&lt;/width&gt;&lt;height&gt;328&lt;/height&gt;&lt;/OriginalControlBounds&gt;&lt;ControlPaneIndex&gt;1&lt;/ControlPaneIndex&gt;&lt;/a1:DockableControlPane&gt;&lt;SOAP-ENC:Array id="ref-21" SOAP-ENC:arrayType="a3:Guid[1]" xmlns:a3="http://schemas.microsoft.com/clr/ns/System"&gt;&lt;item&gt;&lt;_a&gt;-19919160&lt;/_a&gt;&lt;_b&gt;27921&lt;/_b&gt;&lt;_c&gt;19789&lt;/_c&gt;&lt;_d&gt;185&lt;/_d&gt;&lt;_e&gt;148&lt;/_e&gt;&lt;_f&gt;102&lt;/_f&gt;&lt;_g&gt;5&lt;/_g&gt;&lt;_h&gt;81&lt;/_h&gt;&lt;_i&gt;8&lt;/_i&gt;&lt;_j&gt;3&lt;/_j&gt;&lt;_k&gt;51&lt;/_k&gt;&lt;/item&gt;&lt;/SOAP-ENC:Array&gt;&lt;/SOAP-ENV:Body&gt;&lt;/SOAP-ENV:Envelope&gt;</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>detailPanel1</ControlName>
+    <Key>d5488fbc-e47b-46b6-aa3e-9ab7d923315a</Key>
+    <PropertyName>Text</PropertyName>
+    <PropertyValue />
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>UD02Form</ControlName>
+    <Key>2dcd1674-5e34-4d98-b493-c75747027376</Key>
+    <PropertyName>Text</PropertyName>
+    <PropertyValue>Burn Test Lot Num Correlation</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>navControl</ControlName>
+    <Key>cb27bd11-f6d2-44a0-8686-16db4b4cd048</Key>
+    <PropertyName>Visible</PropertyName>
+    <PropertyValue>True</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>baseStatusBar</ControlName>
+    <Key>UD02Form.baseStatusBar</Key>
+    <PropertyName>Visible</PropertyName>
+    <PropertyValue>True</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grpJobData</ControlName>
+    <Key>d6d764c7-3156-48b3-9776-aeabf632df27</Key>
+    <PropertyName>ChildIndex</PropertyName>
+    <PropertyValue>11</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grpJobData</ControlName>
+    <Key>d6d764c7-3156-48b3-9776-aeabf632df27</Key>
+    <PropertyName>Parent</PropertyName>
+    <PropertyValue>d5488fbc-e47b-46b6-aa3e-9ab7d923315a</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grpJobData</ControlName>
+    <Key>d6d764c7-3156-48b3-9776-aeabf632df27</Key>
+    <PropertyName>Height</PropertyName>
+    <PropertyValue>556</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grpJobData</ControlName>
+    <Key>d6d764c7-3156-48b3-9776-aeabf632df27</Key>
+    <PropertyName>Width</PropertyName>
+    <PropertyValue>301</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grpJobData</ControlName>
+    <Key>d6d764c7-3156-48b3-9776-aeabf632df27</Key>
+    <PropertyName>Left</PropertyName>
+    <PropertyValue>12</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grpJobData</ControlName>
+    <Key>d6d764c7-3156-48b3-9776-aeabf632df27</Key>
+    <PropertyName>Top</PropertyName>
+    <PropertyValue>90</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grpJobData</ControlName>
+    <Key>d6d764c7-3156-48b3-9776-aeabf632df27</Key>
+    <PropertyName>Text</PropertyName>
+    <PropertyValue>Job Data</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grpBurnTestData</ControlName>
+    <Key>81fedfd0-7f83-41f4-b7f3-32b118822642</Key>
+    <PropertyName>ChildIndex</PropertyName>
+    <PropertyValue>11</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grpBurnTestData</ControlName>
+    <Key>81fedfd0-7f83-41f4-b7f3-32b118822642</Key>
+    <PropertyName>Parent</PropertyName>
+    <PropertyValue>d5488fbc-e47b-46b6-aa3e-9ab7d923315a</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grpBurnTestData</ControlName>
+    <Key>81fedfd0-7f83-41f4-b7f3-32b118822642</Key>
+    <PropertyName>Height</PropertyName>
+    <PropertyValue>556</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grpBurnTestData</ControlName>
+    <Key>81fedfd0-7f83-41f4-b7f3-32b118822642</Key>
+    <PropertyName>Width</PropertyName>
+    <PropertyValue>417</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grpBurnTestData</ControlName>
+    <Key>81fedfd0-7f83-41f4-b7f3-32b118822642</Key>
+    <PropertyName>Left</PropertyName>
+    <PropertyValue>325</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grpBurnTestData</ControlName>
+    <Key>81fedfd0-7f83-41f4-b7f3-32b118822642</Key>
+    <PropertyName>Top</PropertyName>
+    <PropertyValue>90</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grpLotTrackData</ControlName>
+    <Key>52e57fb7-1020-4b65-99d5-4577d5c59af3</Key>
+    <PropertyName>ChildIndex</PropertyName>
+    <PropertyValue>11</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grpLotTrackData</ControlName>
+    <Key>52e57fb7-1020-4b65-99d5-4577d5c59af3</Key>
+    <PropertyName>Parent</PropertyName>
+    <PropertyValue>d5488fbc-e47b-46b6-aa3e-9ab7d923315a</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grpLotTrackData</ControlName>
+    <Key>52e57fb7-1020-4b65-99d5-4577d5c59af3</Key>
+    <PropertyName>Height</PropertyName>
+    <PropertyValue>556</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grpLotTrackData</ControlName>
+    <Key>52e57fb7-1020-4b65-99d5-4577d5c59af3</Key>
+    <PropertyName>Width</PropertyName>
+    <PropertyValue>337</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grpLotTrackData</ControlName>
+    <Key>52e57fb7-1020-4b65-99d5-4577d5c59af3</Key>
+    <PropertyName>Left</PropertyName>
+    <PropertyValue>792</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grpLotTrackData</ControlName>
+    <Key>52e57fb7-1020-4b65-99d5-4577d5c59af3</Key>
+    <PropertyName>Top</PropertyName>
+    <PropertyValue>90</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grpBurnTestData</ControlName>
+    <Key>81fedfd0-7f83-41f4-b7f3-32b118822642</Key>
+    <PropertyName>Text</PropertyName>
+    <PropertyValue>Burn Test Data</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grpLotTrackData</ControlName>
+    <Key>52e57fb7-1020-4b65-99d5-4577d5c59af3</Key>
+    <PropertyName>Text</PropertyName>
+    <PropertyValue>Lot Track Data</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grpJobData</ControlName>
+    <Key>d6d764c7-3156-48b3-9776-aeabf632df27</Key>
+    <PropertyName>Anchor</PropertyName>
+    <PropertyValue>Top, Left</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grpBurnTestData</ControlName>
+    <Key>81fedfd0-7f83-41f4-b7f3-32b118822642</Key>
+    <PropertyName>Anchor</PropertyName>
+    <PropertyValue>Top, Left</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grpLotTrackData</ControlName>
+    <Key>52e57fb7-1020-4b65-99d5-4577d5c59af3</Key>
+    <PropertyName>Anchor</PropertyName>
+    <PropertyValue>Top, Left</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>baseStatusBar</ControlName>
+    <Key>UD02Form.baseStatusBar</Key>
+    <PropertyName>Height</PropertyName>
+    <PropertyValue>20</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>baseStatusBar</ControlName>
+    <Key>UD02Form.baseStatusBar</Key>
+    <PropertyName>Width</PropertyName>
+    <PropertyValue>1174</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>baseStatusBar</ControlName>
+    <Key>UD02Form.baseStatusBar</Key>
+    <PropertyName>Left</PropertyName>
+    <PropertyValue>0</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>baseStatusBar</ControlName>
+    <Key>UD02Form.baseStatusBar</Key>
+    <PropertyName>Top</PropertyName>
+    <PropertyValue>735</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>detailPanel1</ControlName>
+    <Key>d5488fbc-e47b-46b6-aa3e-9ab7d923315a</Key>
+    <PropertyName>Height</PropertyName>
+    <PropertyValue>659</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>detailPanel1</ControlName>
+    <Key>d5488fbc-e47b-46b6-aa3e-9ab7d923315a</Key>
+    <PropertyName>Width</PropertyName>
+    <PropertyValue>1143</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grdJobData</ControlName>
+    <Key>95358c52-1df0-467a-9f10-7f01e09a7439</Key>
+    <PropertyName>ChildIndex</PropertyName>
+    <PropertyValue>0</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grdJobData</ControlName>
+    <Key>95358c52-1df0-467a-9f10-7f01e09a7439</Key>
+    <PropertyName>Parent</PropertyName>
+    <PropertyValue>d6d764c7-3156-48b3-9776-aeabf632df27</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grdJobData</ControlName>
+    <Key>95358c52-1df0-467a-9f10-7f01e09a7439</Key>
+    <PropertyName>Height</PropertyName>
+    <PropertyValue>287</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grdJobData</ControlName>
+    <Key>95358c52-1df0-467a-9f10-7f01e09a7439</Key>
+    <PropertyName>Width</PropertyName>
+    <PropertyValue>271</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grdJobData</ControlName>
+    <Key>95358c52-1df0-467a-9f10-7f01e09a7439</Key>
+    <PropertyName>Left</PropertyName>
+    <PropertyValue>25</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grdJobData</ControlName>
+    <Key>95358c52-1df0-467a-9f10-7f01e09a7439</Key>
+    <PropertyName>Top</PropertyName>
+    <PropertyValue>54</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grdJobData</ControlName>
+    <Key>95358c52-1df0-467a-9f10-7f01e09a7439</Key>
+    <PropertyName>Anchor</PropertyName>
+    <PropertyValue>Top, Left</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grdJobData</ControlName>
+    <Key>95358c52-1df0-467a-9f10-7f01e09a7439</Key>
+    <PropertyName>Text</PropertyName>
+    <PropertyValue />
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grdBurnTestData</ControlName>
+    <Key>45e6a467-d013-4c54-8300-b73bf1154871</Key>
+    <PropertyName>ChildIndex</PropertyName>
+    <PropertyValue>0</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grdBurnTestData</ControlName>
+    <Key>45e6a467-d013-4c54-8300-b73bf1154871</Key>
+    <PropertyName>Parent</PropertyName>
+    <PropertyValue>81fedfd0-7f83-41f4-b7f3-32b118822642</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grdBurnTestData</ControlName>
+    <Key>45e6a467-d013-4c54-8300-b73bf1154871</Key>
+    <PropertyName>Height</PropertyName>
+    <PropertyValue>354</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grdBurnTestData</ControlName>
+    <Key>45e6a467-d013-4c54-8300-b73bf1154871</Key>
+    <PropertyName>Width</PropertyName>
+    <PropertyValue>227</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grdBurnTestData</ControlName>
+    <Key>45e6a467-d013-4c54-8300-b73bf1154871</Key>
+    <PropertyName>Left</PropertyName>
+    <PropertyValue>33</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grdBurnTestData</ControlName>
+    <Key>45e6a467-d013-4c54-8300-b73bf1154871</Key>
+    <PropertyName>Top</PropertyName>
+    <PropertyValue>40</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grdBurnTestData</ControlName>
+    <Key>45e6a467-d013-4c54-8300-b73bf1154871</Key>
+    <PropertyName>Text</PropertyName>
+    <PropertyValue />
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grdLotTrackData</ControlName>
+    <Key>f851d5fd-7707-4c43-abbb-0a99028d857d</Key>
+    <PropertyName>ChildIndex</PropertyName>
+    <PropertyValue>0</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grdLotTrackData</ControlName>
+    <Key>f851d5fd-7707-4c43-abbb-0a99028d857d</Key>
+    <PropertyName>Parent</PropertyName>
+    <PropertyValue>52e57fb7-1020-4b65-99d5-4577d5c59af3</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grdLotTrackData</ControlName>
+    <Key>f851d5fd-7707-4c43-abbb-0a99028d857d</Key>
+    <PropertyName>Height</PropertyName>
+    <PropertyValue>296</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grdLotTrackData</ControlName>
+    <Key>f851d5fd-7707-4c43-abbb-0a99028d857d</Key>
+    <PropertyName>Width</PropertyName>
+    <PropertyValue>256</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grdLotTrackData</ControlName>
+    <Key>f851d5fd-7707-4c43-abbb-0a99028d857d</Key>
+    <PropertyName>Left</PropertyName>
+    <PropertyValue>77</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grdLotTrackData</ControlName>
+    <Key>f851d5fd-7707-4c43-abbb-0a99028d857d</Key>
+    <PropertyName>Top</PropertyName>
+    <PropertyValue>116</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grdLotTrackData</ControlName>
+    <Key>f851d5fd-7707-4c43-abbb-0a99028d857d</Key>
+    <PropertyName>Text</PropertyName>
+    <PropertyValue />
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>txtJobNum</ControlName>
+    <Key>983351c5-08f4-469d-994a-4c31ef952d69</Key>
+    <PropertyName>ChildIndex</PropertyName>
+    <PropertyValue>2</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>txtJobNum</ControlName>
+    <Key>983351c5-08f4-469d-994a-4c31ef952d69</Key>
+    <PropertyName>Parent</PropertyName>
+    <PropertyValue>d5488fbc-e47b-46b6-aa3e-9ab7d923315a</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>txtJobNum</ControlName>
+    <Key>983351c5-08f4-469d-994a-4c31ef952d69</Key>
+    <PropertyName>Height</PropertyName>
+    <PropertyValue>20</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>txtJobNum</ControlName>
+    <Key>983351c5-08f4-469d-994a-4c31ef952d69</Key>
+    <PropertyName>Width</PropertyName>
+    <PropertyValue>101</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>txtJobNum</ControlName>
+    <Key>983351c5-08f4-469d-994a-4c31ef952d69</Key>
+    <PropertyName>Left</PropertyName>
+    <PropertyValue>87</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>txtJobNum</ControlName>
+    <Key>983351c5-08f4-469d-994a-4c31ef952d69</Key>
+    <PropertyName>Top</PropertyName>
+    <PropertyValue>42</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>detailPanel1</FormsID>
+    <ControlName>txtJobNum</ControlName>
+    <Key>983351c5-08f4-469d-994a-4c31ef952d69</Key>
+    <PropertyName>Anchor</PropertyName>
+    <PropertyValue>Top, Left</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>txtJobNum</ControlName>
+    <Key>983351c5-08f4-469d-994a-4c31ef952d69</Key>
+    <PropertyName>Text</PropertyName>
+    <PropertyValue />
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>txtJobNum</ControlName>
+    <Key>983351c5-08f4-469d-994a-4c31ef952d69</Key>
+    <PropertyName>EpiLabel</PropertyName>
+    <PropertyValue>btnJobNum</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>btnJobNum</ControlName>
+    <Key>98a6cb63-d063-41e2-b7e4-ce5a57503a9d</Key>
+    <PropertyName>ChildIndex</PropertyName>
+    <PropertyValue>10</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>btnJobNum</ControlName>
+    <Key>98a6cb63-d063-41e2-b7e4-ce5a57503a9d</Key>
+    <PropertyName>Parent</PropertyName>
+    <PropertyValue>d5488fbc-e47b-46b6-aa3e-9ab7d923315a</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>btnJobNum</ControlName>
+    <Key>98a6cb63-d063-41e2-b7e4-ce5a57503a9d</Key>
+    <PropertyName>Height</PropertyName>
+    <PropertyValue>20</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>btnJobNum</ControlName>
+    <Key>98a6cb63-d063-41e2-b7e4-ce5a57503a9d</Key>
+    <PropertyName>Width</PropertyName>
+    <PropertyValue>63</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>btnJobNum</ControlName>
+    <Key>98a6cb63-d063-41e2-b7e4-ce5a57503a9d</Key>
+    <PropertyName>Left</PropertyName>
+    <PropertyValue>13</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>btnJobNum</ControlName>
+    <Key>98a6cb63-d063-41e2-b7e4-ce5a57503a9d</Key>
+    <PropertyName>Top</PropertyName>
+    <PropertyValue>42</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>detailPanel1</FormsID>
+    <ControlName>btnJobNum</ControlName>
+    <Key>98a6cb63-d063-41e2-b7e4-ce5a57503a9d</Key>
+    <PropertyName>Anchor</PropertyName>
+    <PropertyValue>Top, Left</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>btnJobNum</ControlName>
+    <Key>98a6cb63-d063-41e2-b7e4-ce5a57503a9d</Key>
+    <PropertyName>Text</PropertyName>
+    <PropertyValue>Job Num</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>txtCopyFromJob</ControlName>
+    <Key>1215c3cb-68c4-48a3-9c85-2a8434d40196</Key>
+    <PropertyName>ChildIndex</PropertyName>
+    <PropertyValue>7</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>txtCopyFromJob</ControlName>
+    <Key>1215c3cb-68c4-48a3-9c85-2a8434d40196</Key>
+    <PropertyName>Parent</PropertyName>
+    <PropertyValue>d5488fbc-e47b-46b6-aa3e-9ab7d923315a</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>txtCopyFromJob</ControlName>
+    <Key>1215c3cb-68c4-48a3-9c85-2a8434d40196</Key>
+    <PropertyName>Height</PropertyName>
+    <PropertyValue>20</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>txtCopyFromJob</ControlName>
+    <Key>1215c3cb-68c4-48a3-9c85-2a8434d40196</Key>
+    <PropertyName>Width</PropertyName>
+    <PropertyValue>110</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>txtCopyFromJob</ControlName>
+    <Key>1215c3cb-68c4-48a3-9c85-2a8434d40196</Key>
+    <PropertyName>Left</PropertyName>
+    <PropertyValue>435</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>txtCopyFromJob</ControlName>
+    <Key>1215c3cb-68c4-48a3-9c85-2a8434d40196</Key>
+    <PropertyName>Top</PropertyName>
+    <PropertyValue>42</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>detailPanel1</FormsID>
+    <ControlName>txtCopyFromJob</ControlName>
+    <Key>1215c3cb-68c4-48a3-9c85-2a8434d40196</Key>
+    <PropertyName>Anchor</PropertyName>
+    <PropertyValue>Top, Left</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>txtCopyFromJob</ControlName>
+    <Key>1215c3cb-68c4-48a3-9c85-2a8434d40196</Key>
+    <PropertyName>Text</PropertyName>
+    <PropertyValue />
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>txtBTSearch</ControlName>
+    <Key>afb135ef-4d25-4633-b2a3-6d28028f6947</Key>
+    <PropertyName>ChildIndex</PropertyName>
+    <PropertyValue>3</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>txtBTSearch</ControlName>
+    <Key>afb135ef-4d25-4633-b2a3-6d28028f6947</Key>
+    <PropertyName>Parent</PropertyName>
+    <PropertyValue>d5488fbc-e47b-46b6-aa3e-9ab7d923315a</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>txtBTSearch</ControlName>
+    <Key>afb135ef-4d25-4633-b2a3-6d28028f6947</Key>
+    <PropertyName>Height</PropertyName>
+    <PropertyValue>20</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>txtBTSearch</ControlName>
+    <Key>afb135ef-4d25-4633-b2a3-6d28028f6947</Key>
+    <PropertyName>Width</PropertyName>
+    <PropertyValue>86</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>txtBTSearch</ControlName>
+    <Key>afb135ef-4d25-4633-b2a3-6d28028f6947</Key>
+    <PropertyName>Left</PropertyName>
+    <PropertyValue>874</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>txtBTSearch</ControlName>
+    <Key>afb135ef-4d25-4633-b2a3-6d28028f6947</Key>
+    <PropertyName>Top</PropertyName>
+    <PropertyValue>42</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>detailPanel1</FormsID>
+    <ControlName>txtBTSearch</ControlName>
+    <Key>afb135ef-4d25-4633-b2a3-6d28028f6947</Key>
+    <PropertyName>Anchor</PropertyName>
+    <PropertyValue>Top, Left</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>txtBTSearch</ControlName>
+    <Key>afb135ef-4d25-4633-b2a3-6d28028f6947</Key>
+    <PropertyName>Text</PropertyName>
+    <PropertyValue />
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>btnAddBt</ControlName>
+    <Key>42e4c4c5-c2e7-40e8-a553-70f9999c845a</Key>
+    <PropertyName>ChildIndex</PropertyName>
+    <PropertyValue>2</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>btnAddBt</ControlName>
+    <Key>42e4c4c5-c2e7-40e8-a553-70f9999c845a</Key>
+    <PropertyName>Parent</PropertyName>
+    <PropertyValue>d5488fbc-e47b-46b6-aa3e-9ab7d923315a</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>btnAddBt</ControlName>
+    <Key>42e4c4c5-c2e7-40e8-a553-70f9999c845a</Key>
+    <PropertyName>Height</PropertyName>
+    <PropertyValue>20</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>btnAddBt</ControlName>
+    <Key>42e4c4c5-c2e7-40e8-a553-70f9999c845a</Key>
+    <PropertyName>Width</PropertyName>
+    <PropertyValue>92</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>btnAddBt</ControlName>
+    <Key>42e4c4c5-c2e7-40e8-a553-70f9999c845a</Key>
+    <PropertyName>Left</PropertyName>
+    <PropertyValue>966</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>btnAddBt</ControlName>
+    <Key>42e4c4c5-c2e7-40e8-a553-70f9999c845a</Key>
+    <PropertyName>Top</PropertyName>
+    <PropertyValue>42</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>detailPanel1</FormsID>
+    <ControlName>btnAddBt</ControlName>
+    <Key>42e4c4c5-c2e7-40e8-a553-70f9999c845a</Key>
+    <PropertyName>Anchor</PropertyName>
+    <PropertyValue>Top, Left</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>btnAddBt</ControlName>
+    <Key>42e4c4c5-c2e7-40e8-a553-70f9999c845a</Key>
+    <PropertyName>Text</PropertyName>
+    <PropertyValue>Add Selected</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>btnAdd</ControlName>
+    <Key>fe2b0d72-5db4-4c49-8fa5-e33df9ff414d</Key>
+    <PropertyName>ChildIndex</PropertyName>
+    <PropertyValue>0</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>btnAdd</ControlName>
+    <Key>fe2b0d72-5db4-4c49-8fa5-e33df9ff414d</Key>
+    <PropertyName>Parent</PropertyName>
+    <PropertyValue>d5488fbc-e47b-46b6-aa3e-9ab7d923315a</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>btnAdd</ControlName>
+    <Key>fe2b0d72-5db4-4c49-8fa5-e33df9ff414d</Key>
+    <PropertyName>Height</PropertyName>
+    <PropertyValue>20</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>btnAdd</ControlName>
+    <Key>fe2b0d72-5db4-4c49-8fa5-e33df9ff414d</Key>
+    <PropertyName>Width</PropertyName>
+    <PropertyValue>34</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>btnAdd</ControlName>
+    <Key>fe2b0d72-5db4-4c49-8fa5-e33df9ff414d</Key>
+    <PropertyName>Left</PropertyName>
+    <PropertyValue>749</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>btnAdd</ControlName>
+    <Key>fe2b0d72-5db4-4c49-8fa5-e33df9ff414d</Key>
+    <PropertyName>Top</PropertyName>
+    <PropertyValue>233</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>detailPanel1</FormsID>
+    <ControlName>btnAdd</ControlName>
+    <Key>fe2b0d72-5db4-4c49-8fa5-e33df9ff414d</Key>
+    <PropertyName>Anchor</PropertyName>
+    <PropertyValue>Top, Left</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>btnRemove</ControlName>
+    <Key>33a827f6-ef4a-4208-a974-2f5acf21b082</Key>
+    <PropertyName>ChildIndex</PropertyName>
+    <PropertyValue>5</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>btnRemove</ControlName>
+    <Key>33a827f6-ef4a-4208-a974-2f5acf21b082</Key>
+    <PropertyName>Parent</PropertyName>
+    <PropertyValue>d5488fbc-e47b-46b6-aa3e-9ab7d923315a</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>btnRemove</ControlName>
+    <Key>33a827f6-ef4a-4208-a974-2f5acf21b082</Key>
+    <PropertyName>Height</PropertyName>
+    <PropertyValue>20</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>btnRemove</ControlName>
+    <Key>33a827f6-ef4a-4208-a974-2f5acf21b082</Key>
+    <PropertyName>Width</PropertyName>
+    <PropertyValue>34</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>btnRemove</ControlName>
+    <Key>33a827f6-ef4a-4208-a974-2f5acf21b082</Key>
+    <PropertyName>Left</PropertyName>
+    <PropertyValue>749</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>btnRemove</ControlName>
+    <Key>33a827f6-ef4a-4208-a974-2f5acf21b082</Key>
+    <PropertyName>Top</PropertyName>
+    <PropertyValue>395</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>btnAdd</ControlName>
+    <Key>fe2b0d72-5db4-4c49-8fa5-e33df9ff414d</Key>
+    <PropertyName>Text</PropertyName>
+    <PropertyValue>&gt;</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>detailPanel1</FormsID>
+    <ControlName>btnRemove</ControlName>
+    <Key>33a827f6-ef4a-4208-a974-2f5acf21b082</Key>
+    <PropertyName>Anchor</PropertyName>
+    <PropertyValue>Top, Left</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>btnRemove</ControlName>
+    <Key>33a827f6-ef4a-4208-a974-2f5acf21b082</Key>
+    <PropertyName>Text</PropertyName>
+    <PropertyValue>&lt;</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grdLotTrackData</ControlName>
+    <Key>f851d5fd-7707-4c43-abbb-0a99028d857d</Key>
+    <PropertyName>EpiBinding</PropertyName>
+    <PropertyValue>UD02</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>grdLotTrackData</ControlName>
+    <Key>f851d5fd-7707-4c43-abbb-0a99028d857d</Key>
+    <PropertyName>LayoutXML</PropertyName>
+    <PropertyValue>&lt;DisplayLayout&gt;&lt;xs:schema id="DisplayLayout" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"&gt;&lt;xs:element name="DisplayLayout" msdata:IsDataSet="true" msdata:UseCurrentLocale="true"&gt;&lt;xs:complexType&gt;&lt;xs:choice minOccurs="0" maxOccurs="unbounded"&gt;&lt;xs:element name="DisplayLayoutTable"&gt;&lt;xs:complexType&gt;&lt;xs:sequence&gt;&lt;xs:element name="ColumnKey" type="xs:string" minOccurs="0" /&gt;&lt;xs:element name="PropertyName" type="xs:string" minOccurs="0" /&gt;&lt;xs:element name="PropertyValue" type="xs:string" minOccurs="0" /&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;/xs:element&gt;&lt;/xs:choice&gt;&lt;/xs:complexType&gt;&lt;/xs:element&gt;&lt;/xs:schema&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;f851d5fd-7707-4c43-abbb-0a99028d857d&lt;/ColumnKey&gt;&lt;PropertyName&gt;ShowSummaries&lt;/PropertyName&gt;&lt;PropertyValue&gt;False&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Company&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Company&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Key1&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;124&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Key1&lt;/ColumnKey&gt;&lt;PropertyName&gt;Caption&lt;/PropertyName&gt;&lt;PropertyValue&gt;PREmpMas.EmpID&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Key1&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Key2&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Key2&lt;/ColumnKey&gt;&lt;PropertyName&gt;Caption&lt;/PropertyName&gt;&lt;PropertyValue&gt;P/N&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Key3&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Key3&lt;/ColumnKey&gt;&lt;PropertyName&gt;Caption&lt;/PropertyName&gt;&lt;PropertyValue&gt;BT#&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Key4&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Key5&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;164&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Key5&lt;/ColumnKey&gt;&lt;PropertyName&gt;Caption&lt;/PropertyName&gt;&lt;PropertyValue&gt;Guid.NewGuid().ToString()&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Key5&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character01&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character01&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character02&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character02&lt;/ColumnKey&gt;&lt;PropertyName&gt;Caption&lt;/PropertyName&gt;&lt;PropertyValue&gt;PayType&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character02&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character03&lt;/ColumnKey&gt;&lt;PropertyName&gt;Caption&lt;/PropertyName&gt;&lt;PropertyValue&gt;SupNum&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character03&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;False&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character04&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character04&lt;/ColumnKey&gt;&lt;PropertyName&gt;Caption&lt;/PropertyName&gt;&lt;PropertyValue&gt;ApprovedBy&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character04&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character05&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;135&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character05&lt;/ColumnKey&gt;&lt;PropertyName&gt;Caption&lt;/PropertyName&gt;&lt;PropertyValue&gt;SupervisorComments&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character05&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character06&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character06&lt;/ColumnKey&gt;&lt;PropertyName&gt;Caption&lt;/PropertyName&gt;&lt;PropertyValue&gt;ExchangeID&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character06&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character07&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character07&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character08&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character08&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character09&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character09&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character10&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character10&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number01&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;117&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number01&lt;/ColumnKey&gt;&lt;PropertyName&gt;Caption&lt;/PropertyName&gt;&lt;PropertyValue&gt;TiimeOffStartTime&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number01&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number02&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;110&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number02&lt;/ColumnKey&gt;&lt;PropertyName&gt;Caption&lt;/PropertyName&gt;&lt;PropertyValue&gt;TimeOffEndTime&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number02&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number03&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;79&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number03&lt;/ColumnKey&gt;&lt;PropertyName&gt;Caption&lt;/PropertyName&gt;&lt;PropertyValue&gt;TotalHours&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number03&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number04&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;79&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number04&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number05&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;79&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number05&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number06&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;79&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number06&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number07&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;79&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number07&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number08&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;79&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number08&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number09&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;79&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number09&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number10&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;79&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number10&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number11&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;79&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number11&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number12&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;79&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number12&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number13&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;79&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number13&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number14&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;79&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number14&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number15&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;79&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number15&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number16&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;79&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number16&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number17&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;79&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number17&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number18&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;79&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number18&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number19&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;79&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number19&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number20&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;79&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Number20&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date01&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;113&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date01&lt;/ColumnKey&gt;&lt;PropertyName&gt;Caption&lt;/PropertyName&gt;&lt;PropertyValue&gt;TimeOffStartDate&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date01&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date02&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;109&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date02&lt;/ColumnKey&gt;&lt;PropertyName&gt;Caption&lt;/PropertyName&gt;&lt;PropertyValue&gt;TimeOffEndDate&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date02&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date03&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;89&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date03&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date04&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;89&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date04&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date05&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;89&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date05&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date06&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;89&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date06&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date07&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;89&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date07&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date08&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;89&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date08&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date09&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;89&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date09&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date10&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;89&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date10&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date11&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;89&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date11&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date12&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;89&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date12&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date13&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;89&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date13&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date14&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;89&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date14&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date15&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;89&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date15&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date16&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;89&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date16&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date17&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;89&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date17&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date18&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;89&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date18&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date19&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;89&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date19&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date20&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;89&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Date20&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox01&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;85&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox01&lt;/ColumnKey&gt;&lt;PropertyName&gt;Caption&lt;/PropertyName&gt;&lt;PropertyValue&gt;APPROVED&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox01&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox02&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;63&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox02&lt;/ColumnKey&gt;&lt;PropertyName&gt;Caption&lt;/PropertyName&gt;&lt;PropertyValue&gt;DENIED&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox02&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox03&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;73&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox03&lt;/ColumnKey&gt;&lt;PropertyName&gt;Caption&lt;/PropertyName&gt;&lt;PropertyValue&gt;PENDING&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox03&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox04&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;75&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox04&lt;/ColumnKey&gt;&lt;PropertyName&gt;Caption&lt;/PropertyName&gt;&lt;PropertyValue&gt;Processed&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox04&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox05&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;87&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox05&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox06&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;87&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox06&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox07&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;87&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox07&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox08&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;87&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox08&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox09&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;87&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox09&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox10&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;87&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox10&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox11&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;87&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox11&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox12&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;87&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox12&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox13&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;87&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox13&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox14&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;87&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox14&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox15&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;87&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox15&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox16&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;87&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox16&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox17&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;87&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox17&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox18&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;87&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox18&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox19&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;87&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox19&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox20&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;87&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;CheckBox20&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar01&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar01&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar02&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar02&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar03&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar03&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar04&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar04&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar05&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar05&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar06&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar06&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar07&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar07&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar08&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar08&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar09&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar09&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar10&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar10&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar11&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar11&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar12&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar12&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar13&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar13&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar14&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar14&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar15&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar15&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar16&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar16&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar17&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar17&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar18&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar18&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar19&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar19&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar20&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;ShortChar20&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;SysRowID&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;SysRevID&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;71&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;BitFlag&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;58&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;BitFlag&lt;/ColumnKey&gt;&lt;PropertyName&gt;Caption&lt;/PropertyName&gt;&lt;PropertyValue&gt;Bit Flag&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;BitFlag&lt;/ColumnKey&gt;&lt;PropertyName&gt;CellActivation&lt;/PropertyName&gt;&lt;PropertyValue&gt;NoEdit&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;GlobalUD02&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;84&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;GlobalUD02&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;GlobalLock&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;78&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;GlobalLock&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;RowIdent&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;RowMod&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;DBRowIdent&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;86&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Key4&lt;/ColumnKey&gt;&lt;PropertyName&gt;Caption&lt;/PropertyName&gt;&lt;PropertyValue&gt;Lot Num&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;Character03&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;98&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;UD02ToUD02Attch&lt;/ColumnKey&gt;&lt;PropertyName&gt;Width&lt;/PropertyName&gt;&lt;PropertyValue&gt;122&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;DisplayLayoutTable&gt;&lt;ColumnKey&gt;UD02ToUD02Attch&lt;/ColumnKey&gt;&lt;PropertyName&gt;Hidden&lt;/PropertyName&gt;&lt;PropertyValue&gt;True&lt;/PropertyValue&gt;&lt;/DisplayLayoutTable&gt;&lt;/DisplayLayout&gt;</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>btnCopy</ControlName>
+    <Key>db0651d6-557d-441c-8ae5-cde052e8a0f6</Key>
+    <PropertyName>ChildIndex</PropertyName>
+    <PropertyValue>7</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>btnCopy</ControlName>
+    <Key>db0651d6-557d-441c-8ae5-cde052e8a0f6</Key>
+    <PropertyName>Parent</PropertyName>
+    <PropertyValue>d5488fbc-e47b-46b6-aa3e-9ab7d923315a</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>btnCopy</ControlName>
+    <Key>db0651d6-557d-441c-8ae5-cde052e8a0f6</Key>
+    <PropertyName>Height</PropertyName>
+    <PropertyValue>22</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>btnCopy</ControlName>
+    <Key>db0651d6-557d-441c-8ae5-cde052e8a0f6</Key>
+    <PropertyName>Width</PropertyName>
+    <PropertyValue>100</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>btnCopy</ControlName>
+    <Key>db0651d6-557d-441c-8ae5-cde052e8a0f6</Key>
+    <PropertyName>Left</PropertyName>
+    <PropertyValue>569</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>btnCopy</ControlName>
+    <Key>db0651d6-557d-441c-8ae5-cde052e8a0f6</Key>
+    <PropertyName>Top</PropertyName>
+    <PropertyValue>42</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>detailPanel1</FormsID>
+    <ControlName>btnCopy</ControlName>
+    <Key>db0651d6-557d-441c-8ae5-cde052e8a0f6</Key>
+    <PropertyName>Anchor</PropertyName>
+    <PropertyValue>Top, Left</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>btnCopy</ControlName>
+    <Key>db0651d6-557d-441c-8ae5-cde052e8a0f6</Key>
+    <PropertyName>Text</PropertyName>
+    <PropertyValue>Copy</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>detailPanel1</FormsID>
+    <ControlName>btnCopy</ControlName>
+    <Key>db0651d6-557d-441c-8ae5-cde052e8a0f6</Key>
+    <PropertyName>AnchorTop</PropertyName>
+    <PropertyValue>42</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>detailPanel1</FormsID>
+    <ControlName>btnCopy</ControlName>
+    <Key>db0651d6-557d-441c-8ae5-cde052e8a0f6</Key>
+    <PropertyName>AnchorLeft</PropertyName>
+    <PropertyValue>569</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>detailPanel1</FormsID>
+    <ControlName>btnCopy</ControlName>
+    <Key>db0651d6-557d-441c-8ae5-cde052e8a0f6</Key>
+    <PropertyName>AnchorWidth</PropertyName>
+    <PropertyValue>100</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>detailPanel1</FormsID>
+    <ControlName>btnCopy</ControlName>
+    <Key>db0651d6-557d-441c-8ae5-cde052e8a0f6</Key>
+    <PropertyName>AnchorHeight</PropertyName>
+    <PropertyValue>22</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>txtJobNum</ControlName>
+    <Key>5f1fc037-68b4-4885-96c2-093a86f0ae71</Key>
+    <PropertyName>ChildIndex</PropertyName>
+    <PropertyValue>1</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>txtJobNum</ControlName>
+    <Key>5f1fc037-68b4-4885-96c2-093a86f0ae71</Key>
+    <PropertyName>Parent</PropertyName>
+    <PropertyValue>d2c547fa-91eb-4a22-aee1-4f247b44179f</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>txtJobNum</ControlName>
+    <Key>5f1fc037-68b4-4885-96c2-093a86f0ae71</Key>
+    <PropertyName>Height</PropertyName>
+    <PropertyValue>20</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>txtJobNum</ControlName>
+    <Key>5f1fc037-68b4-4885-96c2-093a86f0ae71</Key>
+    <PropertyName>Width</PropertyName>
+    <PropertyValue>150</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>txtJobNum</ControlName>
+    <Key>5f1fc037-68b4-4885-96c2-093a86f0ae71</Key>
+    <PropertyName>Left</PropertyName>
+    <PropertyValue>65</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>txtJobNum</ControlName>
+    <Key>5f1fc037-68b4-4885-96c2-093a86f0ae71</Key>
+    <PropertyName>Top</PropertyName>
+    <PropertyValue>23</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>txtJobNum</ControlName>
+    <Key>5f1fc037-68b4-4885-96c2-093a86f0ae71</Key>
+    <PropertyName>Text</PropertyName>
+    <PropertyValue />
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>txtJobNum</ControlName>
+    <Key>5f1fc037-68b4-4885-96c2-093a86f0ae71</Key>
+    <PropertyName>EpiLabel</PropertyName>
+    <PropertyValue>lblJobNum</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>epiGroupBoxC2</FormsID>
+    <ControlName>txtJobNum</ControlName>
+    <Key>5f1fc037-68b4-4885-96c2-093a86f0ae71</Key>
+    <PropertyName>EpiGuid</PropertyName>
+    <PropertyValue>5f1fc037-68b4-4885-96c2-093a86f0ae71</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>detailPanel1</FormsID>
+    <ControlName>btnAdd</ControlName>
+    <Key>fe2b0d72-5db4-4c49-8fa5-e33df9ff414d</Key>
+    <PropertyName>AnchorTop</PropertyName>
+    <PropertyValue>232</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>detailPanel1</FormsID>
+    <ControlName>btnAdd</ControlName>
+    <Key>fe2b0d72-5db4-4c49-8fa5-e33df9ff414d</Key>
+    <PropertyName>AnchorLeft</PropertyName>
+    <PropertyValue>748</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>detailPanel1</FormsID>
+    <ControlName>btnAdd</ControlName>
+    <Key>fe2b0d72-5db4-4c49-8fa5-e33df9ff414d</Key>
+    <PropertyName>AnchorWidth</PropertyName>
+    <PropertyValue>34</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>detailPanel1</FormsID>
+    <ControlName>btnAdd</ControlName>
+    <Key>fe2b0d72-5db4-4c49-8fa5-e33df9ff414d</Key>
+    <PropertyName>AnchorHeight</PropertyName>
+    <PropertyValue>20</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>detailPanel1</FormsID>
+    <ControlName>btnRemove</ControlName>
+    <Key>33a827f6-ef4a-4208-a974-2f5acf21b082</Key>
+    <PropertyName>AnchorTop</PropertyName>
+    <PropertyValue>395</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>detailPanel1</FormsID>
+    <ControlName>btnRemove</ControlName>
+    <Key>33a827f6-ef4a-4208-a974-2f5acf21b082</Key>
+    <PropertyName>AnchorLeft</PropertyName>
+    <PropertyValue>749</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>detailPanel1</FormsID>
+    <ControlName>btnRemove</ControlName>
+    <Key>33a827f6-ef4a-4208-a974-2f5acf21b082</Key>
+    <PropertyName>AnchorWidth</PropertyName>
+    <PropertyValue>34</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>detailPanel1</FormsID>
+    <ControlName>btnRemove</ControlName>
+    <Key>33a827f6-ef4a-4208-a974-2f5acf21b082</Key>
+    <PropertyName>AnchorHeight</PropertyName>
+    <PropertyValue>20</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>detailPanel1</FormsID>
+    <ControlName>btnAddBt</ControlName>
+    <Key>42e4c4c5-c2e7-40e8-a553-70f9999c845a</Key>
+    <PropertyName>AnchorTop</PropertyName>
+    <PropertyValue>42</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>detailPanel1</FormsID>
+    <ControlName>btnAddBt</ControlName>
+    <Key>42e4c4c5-c2e7-40e8-a553-70f9999c845a</Key>
+    <PropertyName>AnchorLeft</PropertyName>
+    <PropertyValue>966</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>detailPanel1</FormsID>
+    <ControlName>btnAddBt</ControlName>
+    <Key>42e4c4c5-c2e7-40e8-a553-70f9999c845a</Key>
+    <PropertyName>AnchorWidth</PropertyName>
+    <PropertyValue>92</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>detailPanel1</FormsID>
+    <ControlName>btnAddBt</ControlName>
+    <Key>42e4c4c5-c2e7-40e8-a553-70f9999c845a</Key>
+    <PropertyName>AnchorHeight</PropertyName>
+    <PropertyValue>20</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>lblGlobalJobNum</ControlName>
+    <Key>7ec845df-960b-42cc-ad9c-68fa382fac56</Key>
+    <PropertyName>ChildIndex</PropertyName>
+    <PropertyValue>8</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>lblGlobalJobNum</ControlName>
+    <Key>7ec845df-960b-42cc-ad9c-68fa382fac56</Key>
+    <PropertyName>Parent</PropertyName>
+    <PropertyValue>d5488fbc-e47b-46b6-aa3e-9ab7d923315a</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>lblGlobalJobNum</ControlName>
+    <Key>7ec845df-960b-42cc-ad9c-68fa382fac56</Key>
+    <PropertyName>Height</PropertyName>
+    <PropertyValue>20</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>lblGlobalJobNum</ControlName>
+    <Key>7ec845df-960b-42cc-ad9c-68fa382fac56</Key>
+    <PropertyName>Width</PropertyName>
+    <PropertyValue>111</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>lblGlobalJobNum</ControlName>
+    <Key>7ec845df-960b-42cc-ad9c-68fa382fac56</Key>
+    <PropertyName>Left</PropertyName>
+    <PropertyValue>318</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>lblGlobalJobNum</ControlName>
+    <Key>7ec845df-960b-42cc-ad9c-68fa382fac56</Key>
+    <PropertyName>Top</PropertyName>
+    <PropertyValue>42</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>detailPanel1</FormsID>
+    <ControlName>lblGlobalJobNum</ControlName>
+    <Key>7ec845df-960b-42cc-ad9c-68fa382fac56</Key>
+    <PropertyName>Anchor</PropertyName>
+    <PropertyValue>Top, Left</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>detailPanel1</FormsID>
+    <ControlName>lblGlobalJobNum</ControlName>
+    <Key>7ec845df-960b-42cc-ad9c-68fa382fac56</Key>
+    <PropertyName>AnchorTop</PropertyName>
+    <PropertyValue>42</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>detailPanel1</FormsID>
+    <ControlName>lblGlobalJobNum</ControlName>
+    <Key>7ec845df-960b-42cc-ad9c-68fa382fac56</Key>
+    <PropertyName>AnchorLeft</PropertyName>
+    <PropertyValue>318</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>detailPanel1</FormsID>
+    <ControlName>lblGlobalJobNum</ControlName>
+    <Key>7ec845df-960b-42cc-ad9c-68fa382fac56</Key>
+    <PropertyName>AnchorWidth</PropertyName>
+    <PropertyValue>111</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>detailPanel1</FormsID>
+    <ControlName>lblGlobalJobNum</ControlName>
+    <Key>7ec845df-960b-42cc-ad9c-68fa382fac56</Key>
+    <PropertyName>AnchorHeight</PropertyName>
+    <PropertyValue>20</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>lblGlobalJobNum</ControlName>
+    <Key>7ec845df-960b-42cc-ad9c-68fa382fac56</Key>
+    <PropertyName>Text</PropertyName>
+    <PropertyValue>Global Job Num:</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>detailPanel1</FormsID>
+    <ControlName>txtCopyFromJob</ControlName>
+    <Key>1215c3cb-68c4-48a3-9c85-2a8434d40196</Key>
+    <PropertyName>AnchorTop</PropertyName>
+    <PropertyValue>42</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>detailPanel1</FormsID>
+    <ControlName>txtCopyFromJob</ControlName>
+    <Key>1215c3cb-68c4-48a3-9c85-2a8434d40196</Key>
+    <PropertyName>AnchorLeft</PropertyName>
+    <PropertyValue>435</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>detailPanel1</FormsID>
+    <ControlName>txtCopyFromJob</ControlName>
+    <Key>1215c3cb-68c4-48a3-9c85-2a8434d40196</Key>
+    <PropertyName>AnchorWidth</PropertyName>
+    <PropertyValue>110</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>detailPanel1</FormsID>
+    <ControlName>txtCopyFromJob</ControlName>
+    <Key>1215c3cb-68c4-48a3-9c85-2a8434d40196</Key>
+    <PropertyName>AnchorHeight</PropertyName>
+    <PropertyValue>20</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>txtCopyFromJob</ControlName>
+    <Key>1215c3cb-68c4-48a3-9c85-2a8434d40196</Key>
+    <PropertyName>EpiLabel</PropertyName>
+    <PropertyValue>lblGlobalJobNum</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>lblGlobalBTNum</ControlName>
+    <Key>f5e9ae0f-694e-4e96-911b-83782f0febe2</Key>
+    <PropertyName>ChildIndex</PropertyName>
+    <PropertyValue>4</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>lblGlobalBTNum</ControlName>
+    <Key>f5e9ae0f-694e-4e96-911b-83782f0febe2</Key>
+    <PropertyName>Parent</PropertyName>
+    <PropertyValue>d5488fbc-e47b-46b6-aa3e-9ab7d923315a</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>lblGlobalBTNum</ControlName>
+    <Key>f5e9ae0f-694e-4e96-911b-83782f0febe2</Key>
+    <PropertyName>Height</PropertyName>
+    <PropertyValue>20</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>lblGlobalBTNum</ControlName>
+    <Key>f5e9ae0f-694e-4e96-911b-83782f0febe2</Key>
+    <PropertyName>Width</PropertyName>
+    <PropertyValue>91</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>lblGlobalBTNum</ControlName>
+    <Key>f5e9ae0f-694e-4e96-911b-83782f0febe2</Key>
+    <PropertyName>Left</PropertyName>
+    <PropertyValue>777</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>lblGlobalBTNum</ControlName>
+    <Key>f5e9ae0f-694e-4e96-911b-83782f0febe2</Key>
+    <PropertyName>Top</PropertyName>
+    <PropertyValue>42</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>detailPanel1</FormsID>
+    <ControlName>lblGlobalBTNum</ControlName>
+    <Key>f5e9ae0f-694e-4e96-911b-83782f0febe2</Key>
+    <PropertyName>Anchor</PropertyName>
+    <PropertyValue>Top, Left</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>detailPanel1</FormsID>
+    <ControlName>lblGlobalBTNum</ControlName>
+    <Key>f5e9ae0f-694e-4e96-911b-83782f0febe2</Key>
+    <PropertyName>AnchorTop</PropertyName>
+    <PropertyValue>42</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>detailPanel1</FormsID>
+    <ControlName>lblGlobalBTNum</ControlName>
+    <Key>f5e9ae0f-694e-4e96-911b-83782f0febe2</Key>
+    <PropertyName>AnchorLeft</PropertyName>
+    <PropertyValue>777</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>detailPanel1</FormsID>
+    <ControlName>lblGlobalBTNum</ControlName>
+    <Key>f5e9ae0f-694e-4e96-911b-83782f0febe2</Key>
+    <PropertyName>AnchorWidth</PropertyName>
+    <PropertyValue>91</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>detailPanel1</FormsID>
+    <ControlName>lblGlobalBTNum</ControlName>
+    <Key>f5e9ae0f-694e-4e96-911b-83782f0febe2</Key>
+    <PropertyName>AnchorHeight</PropertyName>
+    <PropertyValue>20</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>lblGlobalBTNum</ControlName>
+    <Key>f5e9ae0f-694e-4e96-911b-83782f0febe2</Key>
+    <PropertyName>Text</PropertyName>
+    <PropertyValue>Global BT#:</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>detailPanel1</FormsID>
+    <ControlName>txtBTSearch</ControlName>
+    <Key>afb135ef-4d25-4633-b2a3-6d28028f6947</Key>
+    <PropertyName>AnchorTop</PropertyName>
+    <PropertyValue>42</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>detailPanel1</FormsID>
+    <ControlName>txtBTSearch</ControlName>
+    <Key>afb135ef-4d25-4633-b2a3-6d28028f6947</Key>
+    <PropertyName>AnchorLeft</PropertyName>
+    <PropertyValue>874</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>detailPanel1</FormsID>
+    <ControlName>txtBTSearch</ControlName>
+    <Key>afb135ef-4d25-4633-b2a3-6d28028f6947</Key>
+    <PropertyName>AnchorWidth</PropertyName>
+    <PropertyValue>86</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>detailPanel1</FormsID>
+    <ControlName>txtBTSearch</ControlName>
+    <Key>afb135ef-4d25-4633-b2a3-6d28028f6947</Key>
+    <PropertyName>AnchorHeight</PropertyName>
+    <PropertyValue>20</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>UD02Form</FormsID>
+    <ControlName>txtBTSearch</ControlName>
+    <Key>afb135ef-4d25-4633-b2a3-6d28028f6947</Key>
+    <PropertyName>EpiLabel</PropertyName>
+    <PropertyValue>lblGlobalBTNum</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>detailPanel1</FormsID>
+    <ControlName>txtJobNum</ControlName>
+    <Key>983351c5-08f4-469d-994a-4c31ef952d69</Key>
+    <PropertyName>AnchorTop</PropertyName>
+    <PropertyValue>40</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>detailPanel1</FormsID>
+    <ControlName>txtJobNum</ControlName>
+    <Key>983351c5-08f4-469d-994a-4c31ef952d69</Key>
+    <PropertyName>AnchorLeft</PropertyName>
+    <PropertyValue>84</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>detailPanel1</FormsID>
+    <ControlName>txtJobNum</ControlName>
+    <Key>983351c5-08f4-469d-994a-4c31ef952d69</Key>
+    <PropertyName>AnchorWidth</PropertyName>
+    <PropertyValue>101</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+  <Properties>
+    <FormsID>detailPanel1</FormsID>
+    <ControlName>txtJobNum</ControlName>
+    <Key>983351c5-08f4-469d-994a-4c31ef952d69</Key>
+    <PropertyName>AnchorHeight</PropertyName>
+    <PropertyValue>20</PropertyValue>
+    <Company />
+    <Plant />
+    <DcdUserID />
+    <GroupID />
+    <PropertiesID />
+  </Properties>
+</CustomizationDS>
